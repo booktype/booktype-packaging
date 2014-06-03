@@ -2,9 +2,12 @@ Source: booktype
 Section: web
 Priority: optional
 Maintainer: Daniel James <daniel@64studio.com>
-Build-Depends: debhelper (>= 7.0.50~), po-debconf
-Standards-Version: 3.8.4
+Build-Depends: debhelper (>= 8), dh-python, python-all, python-mock, python-setuptools, python-sphinx, po-debconf
+X-Python-Version: >= 2.7
+Standards-Version: 3.9.4
 Homepage: http://www.sourcefabric.org/en/booktype/
+Vcs-Git: git://github.com/sourcefabric/Booktype.git
+Vcs-Browser: https://github.com/sourcefabric/Booktype
 
 Package: booktype
 Architecture: all
@@ -13,12 +16,14 @@ Depends: apache2-mpm-prefork,
  python,
  python-django,
  python-django-south,
+ python-ebooklib,
  python-imaging,
  python-lxml,
  python-psycopg2,
  python-simplejson,
  python-unidecode,
  redis-server,
+ ${python:Depends},
  ${misc:Depends}
 Recommends: postgresql
 Description: collaborative writing and publishing platform for print or ebooks.

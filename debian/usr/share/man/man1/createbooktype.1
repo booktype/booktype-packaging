@@ -1,0 +1,27 @@
+.\"
+.TH CREATEBOOKTYPE "3" "June 2014"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.SH NAME
+createbooktype \- create a new Booktype instance on the server
+.SH SYNOPSIS
+.B createbooktype [--check-versions] [--database] /path/to/new/booktype/
+.SH DESCRIPTION
+The createbooktype script is used to copy installation files to the chosen target 
+directory and create a settings.py file for the new instance. Using this 
+script enables a single server to host multiple independent Booktype instances.
+.SH OPTIONS
+.TP
+\fB\--check-versions\fR
+Test that the server has the required Python libraries installed before 
+creating the new instance.
+.TP
+\fB\--database\fR (postgresql|sqlite)
+Specify that the new instance should use either a postgresql (recommended) or 
+sqlite database.
+.br
+.SH AUTHOR
+Booktype is developed by Sourcefabric: http://www.sourcefabric.org/
+.PP
+This manual page was written by Daniel James <daniel@64studio.com>,
+for the Debian project (and may be used by others).

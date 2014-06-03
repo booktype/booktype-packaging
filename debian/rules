@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
-%:
-	dh $@
+export DH_VERBOSE=1
+export PYBUILD_NAME=booktype
 
+%:
+	dh $@ --with python2,python3,sphinxdoc --buildsystem=pybuild
