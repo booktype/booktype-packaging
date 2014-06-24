@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Daniel James <daniel@64studio.com>
 Build-Depends: debhelper (>= 8), dh-python, python-all, python-mock, python-setuptools, python-sphinx, po-debconf
 X-Python-Version: >= 2.7
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Homepage: http://www.sourcefabric.org/en/booktype/
 Vcs-Git: git://github.com/sourcefabric/Booktype.git
 Vcs-Browser: https://github.com/sourcefabric/Booktype
@@ -28,7 +28,8 @@ Depends: apache2-mpm-prefork,
  python-unipath,
  redis-server,
  ${python:Depends},
- ${misc:Depends}
+ ${misc:Depends},
+ ${sphinxdoc:Depends}
 Recommends: postgresql
 Description: collaborative writing and publishing platform for print or ebooks.
  Booktype is a free, open source platform that produces beautiful, engaging 
