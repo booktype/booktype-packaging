@@ -39,9 +39,25 @@ Files: lib/booktype/apps/core/static/core/js/jquery.steps.min.js
 Copyright: 2013 Rafael Staib (http://www.jquery-steps.com)
 License: Expat
 
+Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/aloha.js
+Copyright: 2010-2012 Tim Down, Fabrizio Balliano, Kevin Dalman, The Dojo Foundation
+License: Expat
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/text.js
+Copyright: 2010-2011, The Dojo Foundation
+License: Expat
+
 Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/vendor/ierange-m2.js
 Copyright: 2009 Tim Cameron Ryan
 License: Expat
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/vendor/jquery-1.5.1.js lib/booktype/apps/edit/static/edit/js/aloha/lib/vendor/jquery-1.6.js lib/booktype/apps/edit/static/edit/js/aloha/lib/vendor/jquery-1.6.1.js lib/booktype/apps/edit/static/edit/js/aloha/lib/vendor/jquery-1.7.1.js lib/booktype/apps/edit/static/edit/js/aloha/lib/vendor/jquery-1.7.2.js
+Copyright: 2011 John Resig, The Dojo Foundation
+License: Expat
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/align/
+Copyright: 2010 Thomas Lété
+License: LGPL
 
 Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/undo/vendor/diff_match_patch_uncompressed.js
 Copyright: 2006 Google Inc.
@@ -50,6 +66,30 @@ License: Apache-2.0
 Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/undo/vendor/undo.js
 Copyright: 2011 Jörn Zaefferer
 License: Expat
+
+Files: lib/booktype/apps/core/static/core/css/aloha.css lib/booktype/apps/edit/static/edit/js/aloha/css/aloha.css lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/highlighteditables/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/numerated-headers/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/linkchecker/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/headerids/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/formatlesspaste/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/metaview/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/attributes/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/proxy/*
+Copyright: 2010 Gentics Software GmbH
+License: GPL-2+
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/wai-lang/*
+Copyright: 2011 Gentics Software GmbH
+License: GPL-2+
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/captioned-image/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/proxy/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/sourceview/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/validation/*
+Copyright: 2012 Gentics Software GmbH
+License: GPL-2+
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/image/*
+Copyright: 2010-2011 Gentics Software GmbH 
+License: GPL-2+
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/ui/*
+Copyright: 2011 jQuery UI authors (http://jqueryui.com/about)
+License: Expat
+
+Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/util/range-context.js lib/booktype/apps/edit/static/edit/js/aloha/lib/util/browser-fixes.js lib/booktype/apps/edit/static/edit/js/aloha/plugins/booktype/bookundo/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/booktype/bookalign/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/googletranslate/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/linkchecker/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/profiler/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/speak/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/comments/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/draganddropfiles/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/textcolor/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/attributes/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/zemanta/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/hints/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/contenthandler/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/link/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/undo/*
+Copyright: 2010-2012 Gentics Software GmbH
+License: GPL-2+
 
 Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/draganddropfiles/demo/specs/DragnDropnImage.graphml lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/draganddropfiles/lib/dropfilesrepository.js
 Copyright: 2010 Nicolas Karageuzian
@@ -767,6 +807,23 @@ License: GPL-2+
  .
  On Debian systems, the full text of the GNU General Public License version 2
  can be found in the /usr/share/common-licenses/GPL-2 file.
+
+License: LGPL
+ This program is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU Lesser General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc., 51
+ Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public License can
+ be found in the /usr/share/common-licenses/LGPL file.
 
 License: Apache-2.0
  Licensed under the Apache License, Version 2.0 (the "License");
