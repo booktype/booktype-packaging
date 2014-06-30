@@ -8,4 +8,4 @@ requirements/postgresql.txt
 requirements/README.txt
 requirements/sqlite.txt
 lib/booki/messaging/README.txt
-docs/build/sphinx/html
+docs/_build/sphinx/html
