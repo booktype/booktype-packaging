@@ -5,6 +5,7 @@
 VERSION=2.0.0~$(date "+%Y%m%d")
 GITPATH=../booktype/
 BUILDDEST=/tmp/booktype-${VERSION}/
+ORIGBALL=/tmp/booktype_${VERSION}.orig.tar.gz
 
 echo "cleaning up previous build..."
 
@@ -19,13 +20,17 @@ cd ${GITPATH}
 git checkout 2.0
 git pull origin 2.0
 cp -a * ${BUILDDEST} || exit
+tar -cvzf ${ORIGBALL} ${GITPATH}
 
 cd ${BUILDDEST} || exit
 
 # Build the documentation then move it out of the way
 
 python setup.py build_sphinx
-mv build/ docs/
+mv build/ _build/
+rm -r docs/_build/
+mv _build/ docs/
+dpkg-source --commit ${BUILDDEST}
 
 # Set the version of the snapshot package
 
@@ -59,7 +64,7 @@ rm lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/draganddropfiles/de
 
 echo "running the build..."
 
-debuild -b -uc -us $@ || exit
+debuild -uc -us $@ || exit
 
 # copy the new package to the public server
 # scp /tmp/booktype_${VERSION}_all.deb apt.sourcefabric.org:/var/www/apt/snapshots/
