@@ -9,6 +9,17 @@ fi
 
 case "$1" in
   configure|reconfigure)
+
+    # symlinks for fonts
+
+    if [ ! -h /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css/ ] && [ -d /usr/share/fonts-font-awesome/css/ ]; then
+       ln -s /usr/share/fonts-font-awesome/css/ /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css/
+    fi
+
+    if [ ! -h /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font/ ] && [ -d /usr/share/fonts-font-awesome/fonts/ ]; then
+       ln -s /usr/share/fonts-font-awesome/fonts/ /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font/
+    fi
+
   ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)

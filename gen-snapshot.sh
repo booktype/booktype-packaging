@@ -31,6 +31,10 @@ mv build/ _build/
 rm -r docs/_build/
 mv _build/ docs/
 
+# Strip the bundled Awesome font, it is a dependency
+rm -r lib/booktype/apps/core/static/core/css/font-awesome/css/
+rm -r lib/booktype/apps/core/static/core/css/font-awesome/font/
+
 # Set the version of the snapshot package
 
 sed -i "1s:(2.0.0-1):(${VERSION}):g" debian/changelog
