@@ -30,7 +30,6 @@ python setup.py build_sphinx
 mv build/ _build/
 rm -r docs/_build/
 mv _build/ docs/
-dpkg-source --commit ${BUILDDEST}
 
 # Set the version of the snapshot package
 
