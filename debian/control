@@ -2,7 +2,7 @@ Source: booktype
 Section: web
 Priority: optional
 Maintainer: Daniel James <daniel@64studio.com>
-Build-Depends: debhelper (>= 8), dh-python, python-all, python-mock, python-setuptools, python-sphinx (>= 1.0.7+dfsg), po-debconf
+Build-Depends: debhelper (>= 8), dh-python, python-all, python-mock, python-setuptools, python-sphinx (>= 1.0.7+dfsg), po-debconf, python-django-discover-runner
 X-Python-Version: >= 2.7
 Standards-Version: 3.9.5
 Homepage: http://www.sourcefabric.org/en/booktype/
