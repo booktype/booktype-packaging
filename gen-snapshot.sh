@@ -60,14 +60,11 @@ chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/fi/i
 chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/ru/i18n.js
 chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/fr/i18n.js
 
-# delete left-over gitignore file
-rm lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/draganddropfiles/demo/.gitignore
-
 #############################
 
 echo "running the build..."
 
-debuild -uc -us $@ || exit
+debuild -d -uc -us $@ || exit
 
 # copy the new package to the public server
 # scp /tmp/booktype_${VERSION}_all.deb apt.sourcefabric.org:/var/www/apt/snapshots/
