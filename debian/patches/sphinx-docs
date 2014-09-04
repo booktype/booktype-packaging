@@ -721,7 +721,7 @@ Last-Update: <2014-07-01>
 +<li><strong>Chat:</strong> channel #bookttype on irc.freenode.net server</li>
 +<li><strong>Demo:</strong> <a class="reference external" href="http://booktype-demo.sourcefabric.org/">Demo site</a>.</li>
 +<li><strong>Manuals:</strong>
-+<a class="reference external" href="http://en.flossmanuals.net/booktype/">Booktype for Authors and Publishers</a></li>
++<a class="reference external" href="http://sourcefabric.booktype.pro/booktype-20-for-authors-and-publishers/">Booktype for Authors and Publishers</a></li>
 +<li><strong>Forum:</strong>
 +<a class="reference external" href="http://forum.sourcefabric.org/categories/booktype-support">Support forum</a> |
 +<a class="reference external" href="http://forum.sourcefabric.org/categories/booktype-development">Development forum</a> |
@@ -17254,7 +17254,7 @@ Last-Update: <2014-07-01>
 +.. _Support forum: http://forum.sourcefabric.org/categories/booktype-support
 +.. _Development forum: http://forum.sourcefabric.org/categories/booktype-development
 +.. _Documentation forum: http://forum.sourcefabric.org/categories/booktype-documentation
-+.. _Booktype for Authors and Publishers: http://en.flossmanuals.net/booktype/
++.. _Booktype for Authors and Publishers: http://sourcefabric.booktype.pro/booktype-20-for-authors-and-publishers/
 +.. _Tracker: http://dev.sourcefabric.org/browse/BK
 +.. _Wiki: https://wiki.sourcefabric.org/display/Booktype/Booktype
 +
