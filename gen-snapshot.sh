@@ -49,16 +49,6 @@ rm lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/flag-icons/img/flag
 # fix permissions
 chmod +x scripts/cron_reports.sh.original
 chmod +x scripts/cron_reports_weekly.sh.original
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/it/i18n.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/pl/i18n.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/lib/format-plugin.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/i18n.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/booktype/styling/lib/styling-plugin.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/de/i18n.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/eo/i18n.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/fi/i18n.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/ru/i18n.js
-chmod -x lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/nls/fr/i18n.js
 
 #############################
 
