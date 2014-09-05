@@ -4,7 +4,7 @@ export DH_VERBOSE=1
 export PYBUILD_NAME=booktype
 
 %:
-	dh $@ --with python2,sphinxdoc --buildsystem=pybuild
+	dh $@ --with python-virtualenv
 
 override_dh_auto_test:
 #	cd tests && ./start_functests.sh
