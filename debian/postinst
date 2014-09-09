@@ -10,6 +10,23 @@ fi
 case "$1" in
   configure|reconfigure)
 
+    # create virtualenv
+
+    VIRTUAL_ENV_DIR="/usr/lib/booktype/virtualenv"
+
+    if [ -d $VIRTUAL_ENV_DIR ]; then
+       echo -e "\n*** Existing Booktype Virtualenv Found ***"
+       rm -rf ${VIRTUAL_ENV_DIR}
+    fi
+
+    echo -e "\n*** Creating Virtualenv for Booktype ***"
+    virtualenv --no-site-package -p /usr/bin/python ${VIRTUAL_ENV_DIR} 2>/dev/null || exit 1
+
+    # install pybundle
+
+    echo -e "\n*** Installing Python Libraries ***"
+    ${VIRTUAL_ENV_DIR}/bin/pip install /usr/share/booktype/booktype-dependencies.pybundle || exit 1
+
     # symlinks for fonts
 
     if [ ! -h /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css/ ] && [ -d /usr/share/fonts-font-awesome/css/ ]; then
