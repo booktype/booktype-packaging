@@ -2,9 +2,9 @@ Source: booktype
 Section: web
 Priority: optional
 Maintainer: Daniel James <daniel@64studio.com>
-Build-Depends: debhelper (>= 8), dh-python, python-all, python-mock, python-setuptools, python-sphinx (>= 1.0.7+dfsg), po-debconf, python-django-discover-runner
+Build-Depends: debhelper (>= 8), dh-python, python-all, python-mock, python-setuptools, python-sphinx (>= 1.0.7+dfsg), po-debconf
 X-Python-Version: >= 2.7
-Standards-Version: 3.9.5
+Standards-Version: 3.9.4
 Homepage: http://www.sourcefabric.org/en/booktype/
 Vcs-Git: git://github.com/sourcefabric/Booktype.git
 Vcs-Browser: https://github.com/sourcefabric/Booktype
@@ -12,21 +12,12 @@ Vcs-Browser: https://github.com/sourcefabric/Booktype
 Package: booktype
 Architecture: all
 Depends: apache2-mpm-prefork,
+ build-essential,
  fonts-font-awesome,
  libapache2-mod-wsgi,
  python,
- python-compressor (>= 1.2),
- python-django (>= 1.5),
- python-django-braces,
- python-django-celery (>= 3.0.23),
- python-django-south (>= 0.7.6),
- python-ebooklib,
- python-lxml,
- python-pil,
- python-pika,
- python-psycopg2,
- python-unidecode,
- python-unipath,
+ python-dev,
+ python-virtualenv,
  redis-server,
  ${python:Depends},
  ${misc:Depends},
