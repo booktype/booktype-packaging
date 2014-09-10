@@ -33,3 +33,4 @@ docs/_build/sphinx/html/_static/up.png
 docs/_build/sphinx/html/_static/down-pressed.png
 docs/_build/sphinx/html/_static/comment-bright.png
 docs/_build/sphinx/html/_static/up-pressed.png
+debian/booktype-dependencies.pybundle

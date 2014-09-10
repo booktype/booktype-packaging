@@ -1,2 +1,5 @@
 # lib/booki/editor/sql/license.sql is not a duplicate license text
-booktype binary: extra-license-file usr/share/booktype/lib/booki/editor/sql/license.sql
+booktype binary: extra-license-file var/lib/booktype/lib/booki/editor/sql/license.sql
+
+# CHANGES.txt.gz is the upstream detailed changelog
+booktype binary: duplicate-changelog-files usr/share/doc/booktype/CHANGES.txt.gz usr/share/doc/booktype/changelog.gz

@@ -2,7 +2,7 @@
 # Script for generating nightly Booktype snapshot packages
 # Set GITPATH to the directory containg the Booktype source
 
-VERSION=2.0.0~$(date "+%Y%m%d")
+VERSION=2.0.0~$(date "+%Y%m%d")-1
 GITPATH=../booktype/
 BUILDDEST=/tmp/booktype-${VERSION}/
 ORIGBALL=/tmp/booktype_${VERSION}.orig.tar.gz
@@ -49,6 +49,8 @@ rm lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/flag-icons/img/flag
 # fix permissions
 chmod +x scripts/cron_reports.sh.original
 chmod +x scripts/cron_reports_weekly.sh.original
+chmod +x lib/booktype/skeleton/manage.py.original
+chmod +x lib/sputnik/redis-backuo.py
 
 #############################
 
