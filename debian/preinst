@@ -10,6 +10,18 @@ fi
 case "$1" in
   install|upgrade)
 
+    # create virtualenv
+
+    VIRTUAL_ENV_DIR="/var/lib/booktype"
+
+    if [ -d $VIRTUAL_ENV_DIR ]; then
+       echo -e "\n*** Existing Booktype Virtualenv Found ***"
+       rm -rf ${VIRTUAL_ENV_DIR}
+    fi
+
+    echo -e "\n*** Creating Virtualenv for Booktype ***"
+    virtualenv --no-site-package -p /usr/bin/python ${VIRTUAL_ENV_DIR} 2>/dev/null || exit 1
+
   ;;
 
   abort-upgrade)

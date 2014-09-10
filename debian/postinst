@@ -10,31 +10,25 @@ fi
 case "$1" in
   configure|reconfigure)
 
-    # create virtualenv
+    VIRTUAL_ENV_DIR="/var/lib/booktype"
 
-    VIRTUAL_ENV_DIR="/usr/lib/booktype/virtualenv"
+    echo -e "\n*** Installing Python libraries ***"
+    ${VIRTUAL_ENV_DIR}/bin/pip install /var/lib/booktype/booktype-dependencies.pybundle || exit 1
 
-    if [ -d $VIRTUAL_ENV_DIR ]; then
-       echo -e "\n*** Existing Booktype Virtualenv Found ***"
-       rm -rf ${VIRTUAL_ENV_DIR}
+    echo -e "\n*** Activating virtualenv ***"
+    source ${VIRTUAL_ENV_DIR}/bin/activate
+
+    echo -e "\n*** Creating Booktype instance ***"
+    ${VIRTUAL_ENV_DIR}/scripts/createbooktype --check-versions --database postgresql /var/www/booktype/instance1
+
+    echo -e "\n*** Installing symlinks for fonts ***"
+
+    if [ ! -h /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css ] && [ -d /usr/share/fonts-font-awesome/css ]; then
+       ln -s /usr/share/fonts-font-awesome/css /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css
     fi
 
-    echo -e "\n*** Creating Virtualenv for Booktype ***"
-    virtualenv --no-site-package -p /usr/bin/python ${VIRTUAL_ENV_DIR} 2>/dev/null || exit 1
-
-    # install pybundle
-
-    echo -e "\n*** Installing Python Libraries ***"
-    ${VIRTUAL_ENV_DIR}/bin/pip install /usr/share/booktype/booktype-dependencies.pybundle || exit 1
-
-    # symlinks for fonts
-
-    if [ ! -h /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css/ ] && [ -d /usr/share/fonts-font-awesome/css/ ]; then
-       ln -s /usr/share/fonts-font-awesome/css/ /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css/
-    fi
-
-    if [ ! -h /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font/ ] && [ -d /usr/share/fonts-font-awesome/fonts/ ]; then
-       ln -s /usr/share/fonts-font-awesome/fonts/ /usr/share/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font/
+    if [ ! -h /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font ] && [ -d /usr/share/fonts-font-awesome/fonts ]; then
+       ln -s /usr/share/fonts-font-awesome/fonts /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font
     fi
 
   ;;
