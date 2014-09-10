@@ -1,6 +1,5 @@
-lib usr/share/booktype/
-scripts usr/share/booktype/
-debian/usr/share/man/man1 /usr/share/man/
-debian/usr/share/lintian/overrides/booktype /usr/share/lintian/overrides/
-debian/booktype-dependencies.pybundle usr/share/booktype/
-
+lib var/lib/booktype
+scripts var/lib/booktype
+debian/usr/share/man/man1 usr/share/man
+debian/usr/share/lintian/overrides/booktype usr/share/lintian/overrides
+debian/booktype-dependencies.pybundle var/lib/booktype
