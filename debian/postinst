@@ -10,24 +10,26 @@ fi
 case "$1" in
   configure|reconfigure)
 
-    VIRTUAL_ENV_DIR="/var/lib/booktype"
-    DEFAULT_INSTANCE_DIR="/var/www/booktype/instance1"
+    VIRTUAL_ENV_DIR="/var/lib/booktype/"
+    DEFAULT_INSTANCE_DIR="/var/www/booktype/"
+    DEFAULT_INSTANCE_NAME="instance1"
 
     echo -e "\n*** Installing Python libraries ***"
-    ${VIRTUAL_ENV_DIR}/bin/pip install /var/lib/booktype/booktype-dependencies.pybundle || exit 1
+    ${VIRTUAL_ENV_DIR}bin/pip install ${VIRTUAL_ENV_DIR}booktype-dependencies.pybundle || exit 1
 
     echo -e "\n*** Activating virtualenv ***"
-    source ${VIRTUAL_ENV_DIR}/bin/activate
+    source ${VIRTUAL_ENV_DIR}bin/activate
 
     echo -e "\n*** Creating Booktype instance ***"
-    ${VIRTUAL_ENV_DIR}/scripts/createbooktype --check-versions --database postgresql ${DEFAULT_INSTANCE_DIR}
+    mkdir -p ${DEFAULT_INSTANCE_DIR}
+    ${VIRTUAL_ENV_DIR}scripts/createbooktype --check-versions --database postgresql ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
 
     echo -e "\n*** Installing symlinks for fonts ***"
-    if [ ! -h /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css ] && [ -d /usr/share/fonts-font-awesome/css ]; then
-       ln -s /usr/share/fonts-font-awesome/css /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/css
+    if [ ! -h ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/css ] && [ -d /usr/share/fonts-font-awesome/css ]; then
+       ln -s /usr/share/fonts-font-awesome/css ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/css
     fi
-    if [ ! -h /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font ] && [ -d /usr/share/fonts-font-awesome/fonts ]; then
-       ln -s /usr/share/fonts-font-awesome/fonts /var/lib/booktype/lib/booktype/apps/core/static/core/css/font-awesome/font
+    if [ ! -h ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/font ] && [ -d /usr/share/fonts-font-awesome/fonts ]; then
+       ln -s /usr/share/fonts-font-awesome/fonts ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/font
     fi
 
   ;;
