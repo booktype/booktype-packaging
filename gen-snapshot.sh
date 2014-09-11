@@ -2,7 +2,8 @@
 # Script for generating nightly Booktype snapshot packages
 # Set GITPATH to the directory containg the Booktype source
 
-VERSION=2.0.0~$(date "+%Y%m%d")-1
+VERSION=2.0.0~$(date "+%Y%m%d")
+REVISION=1
 GITPATH=../booktype/
 BUILDDEST=/tmp/booktype-${VERSION}/
 ORIGBALL=/tmp/booktype_${VERSION}.orig.tar.gz
@@ -20,6 +21,8 @@ cd ${GITPATH}
 git checkout 2.0
 git pull origin 2.0
 cp -a * ${BUILDDEST} || exit
+
+echo "creating the source tarball..."
 tar -cvzf ${ORIGBALL} ${GITPATH}
 
 cd ${BUILDDEST} || exit
@@ -37,7 +40,7 @@ rm -r lib/booktype/apps/core/static/core/css/font-awesome/font/
 
 # Set the version of the snapshot package
 
-sed -i "1s:(2.0.0-1):(${VERSION}):g" debian/changelog
+sed -i "1s:(2.0.0-1):(${VERSION}-${REVISION}):g" debian/changelog
 
 # Fixes for 2.0.0  #############
 
