@@ -21,8 +21,13 @@ case "$1" in
     source ${VIRTUAL_ENV_DIR}bin/activate
 
     echo -e "\n*** Creating Booktype instance ***"
-    mkdir -p ${DEFAULT_INSTANCE_DIR}
-    ${VIRTUAL_ENV_DIR}scripts/createbooktype --check-versions --database postgresql ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
+    if [ ! -d ${DEFAULT_INSTANCE_DIR} ]; then
+      mkdir -p ${DEFAULT_INSTANCE_DIR}
+    fi
+
+    if [ ! -d ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME} ]; then
+      ${VIRTUAL_ENV_DIR}scripts/createbooktype --check-versions --database postgresql ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
+    fi
 
     echo -e "\n*** Installing symlinks for fonts ***"
     if [ ! -h ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/css ] && [ -d /usr/share/fonts-font-awesome/css ]; then
