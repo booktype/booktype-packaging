@@ -62,7 +62,8 @@ echo "running the build..."
 debuild -d -uc -us $@ || exit
 
 # copy the new package to the public server
-# scp /tmp/booktype_${VERSION}_all.deb apt.sourcefabric.org:/var/www/apt/snapshots/
+# scp /tmp/booktype_${VERSION}-${REVISION}_all.deb apt.sourcefabric.org:/var/www/apt/snapshots/
 
-# copy the build log too
-# scp /tmp/booktype_${VERSION}_amd64.build apt.sourcefabric.org:/var/www/apt/snapshots/
+# copy the build log and changes too
+# scp /tmp/booktype_${VERSION}-${REVISION}_amd64.build apt.sourcefabric.org:/var/www/apt/snapshots/
+# scp /tmp/booktype_${VERSION}-${REVISION}_amd64.changes apt.sourcefabric.org:/var/www/apt/snapshots/
