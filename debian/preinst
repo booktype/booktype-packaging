@@ -20,7 +20,7 @@ case "$1" in
     fi
 
     echo -e "\n*** Creating Virtualenv for Booktype ***"
-    virtualenv --no-site-package -p /usr/bin/python ${VIRTUAL_ENV_DIR} 2>/dev/null || exit 1
+    virtualenv -p /usr/bin/python ${VIRTUAL_ENV_DIR} 2>/dev/null || exit 1
 
   ;;
 
