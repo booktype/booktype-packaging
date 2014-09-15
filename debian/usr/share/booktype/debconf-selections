@@ -1,0 +1,7 @@
+# Create apache2 config:
+# Choices: dedicated v-host, system-wide (all v-hosts), no thanks
+booktype booktype/apache-setup	select	dedicated v-host
+# FQDN - apache-vhost ServerName:
+booktype booktype/apache-servername	string	localhost
+# Email of the vhost-admin - ServerAdmin:
+booktype booktype/apache-serveradmin	string	root@localhost
