@@ -29,14 +29,6 @@ case "$1" in
       ${VIRTUAL_ENV_DIR}scripts/createbooktype --check-versions --database postgresql ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
     fi
 
-    echo -e "\n*** Installing symlinks for fonts ***"
-    if [ ! -h ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/css ] && [ -d /usr/share/fonts-font-awesome/css ]; then
-       ln -s /usr/share/fonts-font-awesome/css ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/css
-    fi
-    if [ ! -h ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/font ] && [ -d /usr/share/fonts-font-awesome/fonts ]; then
-       ln -s /usr/share/fonts-font-awesome/fonts ${VIRTUAL_ENV_DIR}lib/booktype/apps/core/static/core/css/font-awesome/font
-    fi
-
   ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)

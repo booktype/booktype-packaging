@@ -13,7 +13,6 @@ Package: booktype
 Architecture: all
 Depends: apache2-mpm-prefork,
  build-essential,
- fonts-font-awesome,
  libapache2-mod-wsgi,
  libpq-dev,
  libxml2-dev,
