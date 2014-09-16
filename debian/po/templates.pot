@@ -1,20 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Booktype installation questions for Debconf.
+# Copyright (C) 2014 Booktype contributors
+# This file is distributed under the same license as the Booktype package.
+# Daniel James <daniel@64studio.com>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: booktype\n"
-"Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
+"Project-Id-Version: Booktype 2.0\n"
+"Report-Msgid-Bugs-To: contact@sourcefabric.org\n"
 "POT-Creation-Date: 2014-09-16 16:04+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2014-09-16 16:14+0100\n"
+"Last-Translator: Daniel James <daniel.james@sourcefabric.org>\n"
+"Language-Team: Booktype Localization <contact@sourcefabric.org>\n"
+"Language: English\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: select
