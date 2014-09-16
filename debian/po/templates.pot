@@ -46,7 +46,7 @@ msgstr ""
 #. Description
 #: ../templates:1003
 msgid ""
-"Choose \"yes please\" and the script will ask for details in order to set up "
+"Choose 'yes please' and the script will ask for details in order to set up "
 "the Booktype server and create a virtual host configuration for Apache."
 msgstr ""
 
@@ -54,7 +54,7 @@ msgstr ""
 #. Description
 #: ../templates:1003
 msgid ""
-"If you choose \"no thanks\", that's no problem. You're welcome to set it up "
+"If you choose 'no thanks', that's no problem. You're welcome to set it up "
 "however you like. The files in /etc/booktype/ may come in handy."
 msgstr ""
 
