@@ -1,7 +1,7 @@
 Template: booktype/server-setup
 Type: select
-__Choices: yes please, no thanks
-Default: yes please
+_Choices: yes please, no thanks
+_Default: yes please
 _Description: Set up server automatically?
  This script can perform automatic server configuration, so that you can
  connect to Booktype directly after installation.
@@ -51,7 +51,7 @@ _Description: Booktype database port
 
 Template: booktype/admin-name
 Type: string
-Default: Booktype Administrator
+_Default: Booktype Administrator
 _Description: Name of the Booktype server administrator
  Enter the name of the system administrator for your Booktype users to contact.
  .
@@ -66,7 +66,7 @@ _Description: Email address of the Booktype server administrator
 
 Template: booktype/booktype-name 
 Type: string
-Default: Booktype Site
+_Default: Booktype Site
 _Description: Name of the default Booktype instance
  Enter the name of the default Booktype instance, which will be shown in the
  user interface template for that instance.
@@ -106,7 +106,7 @@ _Description: Email port
 
 Template: booktype/default-publisher
 Type: string
-Default: Unknown
+_Default: Unknown
 _Description: Default publisher
  Enter the name of the default publisher for new books.
  .
