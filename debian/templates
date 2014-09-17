@@ -3,11 +3,11 @@ Type: select
 _Choices: yes please, no thanks
 _Default: yes please
 _Description: Set up server automatically?
- This script can perform automatic server configuration, so that you can
- connect to Booktype directly after installation.
+ This script can perform automatic configuration of a default instance, so that
+ you can begin using Booktype directly after installation.
  .
  Choose 'yes please' and the script will ask for details in order to set up
- the Booktype server and create a virtual host configuration for Apache.
+ the Booktype instance and create a virtual host configuration for Apache.
  .
  If you choose 'no thanks', that's no problem. You're welcome to set it up
  however you like. The files in /etc/booktype/ may come in handy.

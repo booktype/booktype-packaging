@@ -38,8 +38,8 @@ msgstr ""
 #. Description
 #: ../templates:1003
 msgid ""
-"This script can perform automatic server configuration, so that you can "
-"connect to Booktype directly after installation."
+"This script can perform automatic configuration of a default instance, so "
+"that you can begin using Booktype directly after installation."
 msgstr ""
 
 #. Type: select
@@ -47,7 +47,7 @@ msgstr ""
 #: ../templates:1003
 msgid ""
 "Choose 'yes please' and the script will ask for details in order to set up "
-"the Booktype server and create a virtual host configuration for Apache."
+"the Booktype instance and create a virtual host configuration for Apache."
 msgstr ""
 
 #. Type: select
