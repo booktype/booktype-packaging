@@ -53,8 +53,8 @@ _Description: Booktype database port:
 Template: booktype/admin-name
 Type: string
 # Translators: please translate this default value
-_Default: Booktype Administrator:
-_Description: Name of the Booktype server administrator
+_Default: Booktype Administrator
+_Description: Name of the Booktype server administrator:
  Enter the name of the system administrator for your Booktype users to contact.
  .
 

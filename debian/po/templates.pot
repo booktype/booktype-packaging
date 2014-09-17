@@ -127,13 +127,13 @@ msgstr ""
 #. Default
 #. Translators: please translate this default value
 #: ../templates:7001
-msgid "Booktype Administrator:"
+msgid "Booktype Administrator"
 msgstr ""
 
 #. Type: string
 #. Description
 #: ../templates:7002
-msgid "Name of the Booktype server administrator"
+msgid "Name of the Booktype server administrator:"
 msgstr ""
 
 #. Type: string
