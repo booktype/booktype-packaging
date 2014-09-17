@@ -18,20 +18,23 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:1001
-msgid "yes please, no thanks"
+#. Type: select
+#. Default
+#. Translators: please translate this default value
+#: ../templates:1001 ../templates:1002
+msgid "yes please"
 msgstr ""
 
 #. Type: select
-#. Default
-#: ../templates:1002
-msgid "yes please"
+#. Choices
+#: ../templates:1001
+msgid "no thanks"
 msgstr ""
 
 #. Type: select
 #. Description
 #: ../templates:1003
-msgid "Set up server automatically?"
+msgid "Set up server automatically:"
 msgstr ""
 
 #. Type: select
@@ -61,7 +64,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:2001
-msgid "Name of the Booktype database"
+msgid "Name of the Booktype database:"
 msgstr ""
 
 #. Type: string
@@ -73,7 +76,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:3001
-msgid "Booktype database owner username"
+msgid "Booktype database owner username:"
 msgstr ""
 
 #. Type: string
@@ -85,7 +88,7 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../templates:4001
-msgid "Password for the Booktype database"
+msgid "Password for the Booktype database:"
 msgstr ""
 
 #. Type: password
@@ -97,7 +100,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:5001
-msgid "Booktype database host"
+msgid "Booktype database host:"
 msgstr ""
 
 #. Type: string
@@ -109,7 +112,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:6001
-msgid "Booktype database port"
+msgid "Booktype database port:"
 msgstr ""
 
 #. Type: string
@@ -122,8 +125,9 @@ msgstr ""
 
 #. Type: string
 #. Default
+#. Translators: please translate this default value
 #: ../templates:7001
-msgid "Booktype Administrator"
+msgid "Booktype Administrator:"
 msgstr ""
 
 #. Type: string
@@ -143,7 +147,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:8001
-msgid "Email address of the Booktype server administrator"
+msgid "Email address of the Booktype server administrator:"
 msgstr ""
 
 #. Type: string
@@ -156,6 +160,7 @@ msgstr ""
 
 #. Type: string
 #. Default
+#. Translators: please translate this default value
 #: ../templates:9001
 msgid "Booktype Site"
 msgstr ""
@@ -163,7 +168,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:9002
-msgid "Name of the default Booktype instance"
+msgid "Name of the default Booktype instance:"
 msgstr ""
 
 #. Type: string
@@ -177,7 +182,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:10001
-msgid "Domain name of the default Booktype instance"
+msgid "Domain name of the default Booktype instance:"
 msgstr ""
 
 #. Type: string
@@ -198,7 +203,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:11001
-msgid "Report email user"
+msgid "Report email user:"
 msgstr ""
 
 #. Type: string
@@ -211,7 +216,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:12001
-msgid "Email host "
+msgid "Email host:"
 msgstr ""
 
 #. Type: string
@@ -223,7 +228,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:13001
-msgid "Email port"
+msgid "Email port:"
 msgstr ""
 
 #. Type: string
@@ -234,6 +239,7 @@ msgstr ""
 
 #. Type: string
 #. Default
+#. Translators: please translate this default value
 #: ../templates:14001
 msgid "Unknown"
 msgstr ""
@@ -241,7 +247,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:14002
-msgid "Default publisher"
+msgid "Default publisher:"
 msgstr ""
 
 #. Type: string
@@ -253,7 +259,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:15001
-msgid "Redis host"
+msgid "Redis host:"
 msgstr ""
 
 #. Type: string
@@ -267,7 +273,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:16001
-msgid "Redis port"
+msgid "Redis port:"
 msgstr ""
 
 #. Type: string
@@ -280,7 +286,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:17001
-msgid "Redis database number"
+msgid "Redis database number:"
 msgstr ""
 
 #. Type: string
@@ -294,7 +300,7 @@ msgstr ""
 #. Type: password
 #. Description
 #: ../templates:18001
-msgid "Redis password"
+msgid "Redis password:"
 msgstr ""
 
 #. Type: password
@@ -307,7 +313,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:19001
-msgid "Default instance time zone"
+msgid "Default instance time zone:"
 msgstr ""
 
 #. Type: string
@@ -319,7 +325,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:20001
-msgid "Default instance interface language"
+msgid "Default instance interface language:"
 msgstr ""
 
 #. Type: string

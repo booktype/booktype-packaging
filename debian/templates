@@ -1,8 +1,9 @@
 Template: booktype/server-setup
 Type: select
-_Choices: yes please, no thanks
+__Choices: yes please, no thanks
+# Translators: please translate this default value
 _Default: yes please
-_Description: Set up server automatically?
+_Description: Set up server automatically:
  This script can perform automatic configuration of a default instance, so that
  you can begin using Booktype directly after installation.
  .
@@ -16,42 +17,43 @@ _Description: Set up server automatically?
 Template: booktype/database-name
 Type: string
 Default: 
-_Description: Name of the Booktype database
+_Description: Name of the Booktype database:
  Enter the name of the database for Booktype to use.
  .
 
 Template: booktype/database-user
 Type: string
 Default:                       
-_Description: Booktype database owner username
+_Description: Booktype database owner username:
  Enter the username of the Booktype database owner.
  .
 
 Template: booktype/database-password
 Type: password
 Default:             
-_Description: Password for the Booktype database
+_Description: Password for the Booktype database:
  Enter the password for the database which Booktype will use.
  .
 
 Template: booktype/database-host
 Type: string
 Default: localhost
-_Description: Booktype database host
+_Description: Booktype database host:
  Enter the hostname of the machine serving the Booktype database. 
  .
 
 Template: booktype/database-port
 Type: string
 Default: 5432          
-_Description: Booktype database port
+_Description: Booktype database port:
  Enter the port number that your database server uses. The default for
  PostgreSQL database servers is 5432.
  .
 
 Template: booktype/admin-name
 Type: string
-_Default: Booktype Administrator
+# Translators: please translate this default value
+_Default: Booktype Administrator:
 _Description: Name of the Booktype server administrator
  Enter the name of the system administrator for your Booktype users to contact.
  .
@@ -59,15 +61,16 @@ _Description: Name of the Booktype server administrator
 Template: booktype/admin-email
 Type: string
 Default: root@localhost
-_Description: Email address of the Booktype server administrator
+_Description: Email address of the Booktype server administrator:
  Enter the email address of the system administrator for your Booktype users to
  contact.
  .
 
 Template: booktype/booktype-site-name 
 Type: string
+# Translators: please translate this default value
 _Default: Booktype Site
-_Description: Name of the default Booktype instance
+_Description: Name of the default Booktype instance:
  Enter the name of the default Booktype instance, which will be shown in the
  user interface template for that instance.
  .
@@ -75,7 +78,7 @@ _Description: Name of the default Booktype instance
 Template: booktype/this-booktype-server
 Type: string
 Default: 
-_Description: Domain name of the default Booktype instance
+_Description: Domain name of the default Booktype instance:
  Enter the domain name of the default Booktype instance. The DNS record for
  this domain name must resolve to the Apache server running on this machine,
  for example:
@@ -86,35 +89,36 @@ _Description: Domain name of the default Booktype instance
 Template: booktype/report-email-user
 Type: string
 Default: 
-_Description: Report email user
+_Description: Report email user:
  Enter the 'From' address for Booktype to use when sending management reports.
  .
 
 Template: booktype/email-host
 Type: string
 Default: localhost
-_Description: Email host 
+_Description: Email host:
  Enter the mail server for Booktype to use when sending email.
  .
 
 Template: booktype/email-port
 Type: string
 Default: 25
-_Description: Email port
+_Description: Email port:
  Enter the SMTP port for Booktype to use when sending email.
  .
 
 Template: booktype/default-publisher
 Type: string
+# Translators: please translate this default value
 _Default: Unknown
-_Description: Default publisher
+_Description: Default publisher:
  Enter the name of the default publisher for new books.
  .
 
 Template: booktype/redis-host
 Type: string
 Default: localhost
-_Description: Redis host
+_Description: Redis host:
  Enter the Redis server hostname. For a typical installation, you can use the
  default of 'localhost'.
  .
@@ -122,14 +126,14 @@ _Description: Redis host
 Template: booktype/redis-port
 Type: string
 Default: 6379
-_Description: Redis port
+_Description: Redis port:
  Enter the port number that your Redis server uses. The default port is 6379.
  .
 
 Template: booktype/redis-db
 Type: string
 Default: 0
-_Description: Redis database number
+_Description: Redis database number:
  Enter the number of the Redis database. If you only have one application using
  the Redis server, this value can be the default of zero.
  .
@@ -137,20 +141,21 @@ _Description: Redis database number
 Template: booktype/redis-password
 Type: password
 Default: None     
-_Description: Redis password
+_Description: Redis password:
  Enter the Redis password, if your server requires one. The default is 'None'.
  .
 
 Template: booktype/time-zone
 Type: string
 Default: Europe/Berlin     
-_Description: Default instance time zone
+_Description: Default instance time zone:
  Enter the time zone for your default Booktype instance.
  .
 
 Template: booktype/interface-language     
 Type: string  
 Default: en-us
-_Description: Default instance interface language
+_Description: Default instance interface language:
  Enter the interface language code for your default Booktype instance.
  .
+
