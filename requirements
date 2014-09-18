@@ -11,3 +11,4 @@ pika
 unipath
 django-braces
 psycopg2
+BeautifulSoup
