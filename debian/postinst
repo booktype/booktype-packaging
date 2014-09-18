@@ -42,7 +42,7 @@ case "$1" in
         fi
 
         if [ ! -d ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME} ]; then
-          ${VIRTUAL_ENV_DIR}scripts/createbooktype --check-versions --database postgresql ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
+          ${VIRTUAL_ENV_DIR}scripts/createbooktype --check-versions --profile prod --database postgresql ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
 
           echo "*** Setting database parameters ***"
 
