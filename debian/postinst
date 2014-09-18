@@ -63,6 +63,8 @@ case "$1" in
           DATABASE_PORT=$RET
           sed -i "s/'PORT': ''/'PORT': '${DATABASE_PORT}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
 
+          echo "*** Setting admin name and email ***"
+
           db_get booktype/admin-name
           ADMIN_NAME=$RET
           sed -i "s/'Your Name'/'${ADMIN_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
@@ -71,8 +73,11 @@ case "$1" in
           ADMIN_EMAIL=$RET
           sed -i "s/'your_email@domain.com'/'${ADMIN_EMAIL}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
 
-          # set the active profile to 'production'
+          echo "*** Setting the active profile to 'production' ***"
+
           sed -i "s/PROFILE_ACTIVE = ''/PROFILE_ACTIVE = 'prod'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          echo "*** Setting Booktype site name and URL ***"
 
           db_get booktype/booktype-site-name
           BOOKTYPE_SITE_NAME=$RET
@@ -81,11 +86,15 @@ case "$1" in
           db_get booktype/this-booktype-server
           THIS_BOOKTYPE_SERVER=$RET
           sed -i "s/THIS_BOOKTYPE_SERVER = ''/THIS_BOOKTYPE_SERVER = '${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
-          sed -i "s/BOOKTYPE_URL = ''/BOOKTYPE_URL = 'http://${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/BOOKTYPE_URL = ''/BOOKTYPE_URL = 'http:\/\/${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          echo "*** Setting report email user ***"
 
           db_get booktype/report-email-user
           REPORT_EMAIL_USER=$RET
           sed -i "s/REPORT_EMAIL_USER = 'booktype@booktype.pro'/REPORT_EMAIL_USER = '${REPORT_EMAIL_USER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          echo "*** Setting email host and port ***"
 
           db_get booktype/email-host
           EMAIL_HOST=$RET
@@ -97,7 +106,10 @@ case "$1" in
 
           db_get booktype/default-publisher
           DEFAULT_PUBLISHER=$RET
+          echo "*** Setting default publisher to ${DEFAULT_PUBLISHER} ***"
           sed -i "s/DEFAULT_PUBLISHER = \"Unknown\"/DEFAULT_PUBLISHER = \"${DEFAULT_PUBLISHER}\"/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          echo "*** Setting Redis parameters ***"
 
           db_get booktype/redis-host
           REDIS_HOST=$RET
@@ -117,10 +129,12 @@ case "$1" in
 
           db_get booktype/time-zone
           TIME_ZONE=$RET
+          echo "*** Setting default time zone to ${TIME_ZONE} ***"
           sed -i "s:TIME_ZONE = 'Europe/Berlin':TIME_ZONE = '${TIME_ZONE}':" ${DEFAULT_INSTANCE_SETTINGS}base.py
 
           db_get booktype/language-code     
           LANGUAGE_CODE=$RET
+          echo "*** Setting default language code to ${LANGUAGE_CODE} ***"
           sed -i "s/LANGUAGE_CODE = 'en-us'/LANGUAGE_CODE = '${LANGUAGE_CODE}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
 
           cd ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
