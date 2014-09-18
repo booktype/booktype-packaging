@@ -16,9 +16,6 @@ fi
     DEFAULT_INSTANCE_NAME="instance1"
     DEFAULT_INSTANCE_SETTINGS="${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/settings/"
 
-    DOMAIN_NAME="$(hostname --fqdn)"
-    TIME_ZONE="$(cat /etc/timezone)"
-
     VIRTUAL_ENV_DIR="/var/lib/booktype/"
 
 case "$1" in
@@ -66,14 +63,71 @@ case "$1" in
           DATABASE_PORT=$RET
           sed -i "s/'PORT': ''/'PORT': '${DATABASE_PORT}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
 
-          # If the user has not entered a FQDN, set it from the hostname
-          echo -e "\n*** Setting default instance name to ${DOMAIN_NAME} ***"
+          db_get booktype/admin-name
+          ADMIN_NAME=$RET
+          sed -i "s/'Your Name'/'${ADMIN_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/admin-email
+          ADMIN_EMAIL=$RET
+          sed -i "s/'your_email@domain.com'/'${ADMIN_EMAIL}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          # set the active profile to 'production'
+          sed -i "s/PROFILE_ACTIVE = ''/PROFILE_ACTIVE = 'prod'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/booktype-site-name
+          BOOKTYPE_SITE_NAME=$RET
+          sed -i "s/BOOKTYPE_SITE_NAME = None/BOOKTYPE_SITE_NAME = '${BOOKTYPE_SITE_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/this-booktype-server
+          THIS_BOOKTYPE_SERVER=$RET
+          sed -i "s/THIS_BOOKTYPE_SERVER = ''/THIS_BOOKTYPE_SERVER = '${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/BOOKTYPE_URL = ''/BOOKTYPE_URL = 'http://${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/report-email-user
+          REPORT_EMAIL_USER=$RET
+          sed -i "s/REPORT_EMAIL_USER = 'booktype@booktype.pro'/REPORT_EMAIL_USER = '${REPORT_EMAIL_USER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/email-host
+          EMAIL_HOST=$RET
+          sed -i "s/EMAIL_HOST = 'localhost'/EMAIL_HOST = '${EMAIL_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/email-port
+          EMAIL_PORT=$RET
+          sed -i "s/EMAIL_PORT = 25/EMAIL_PORT = ${EMAIL_PORT}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/default-publisher
+          DEFAULT_PUBLISHER=$RET
+          sed -i "s/DEFAULT_PUBLISHER = \"Unknown\"/DEFAULT_PUBLISHER = \"${DEFAULT_PUBLISHER}\"/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/redis-host
+          REDIS_HOST=$RET
+          sed -i "s/REDIS_HOST = 'localhost'/REDIS_HOST = '${REDIS_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/redis-port
+          REDIS_PORT=$RET
+          sed -i "s/REDIS_PORT = 6379/REDIS_PORT = ${REDIS_PORT}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/redis-db
+          REDIS_DB=$RET
+          sed -i "s/REDIS_DB = 0/REDIS_DB = ${REDIS_DB}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/redis-password
+          REDIS_PASSWORD=$RET
+          sed -i "s/REDIS_PASSWORD = None/REDIS_PASSWORD = ${REDIS_PASSWORD}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/time-zone
+          TIME_ZONE=$RET
+          sed -i "s:TIME_ZONE = 'Europe/Berlin':TIME_ZONE = '${TIME_ZONE}':" ${DEFAULT_INSTANCE_SETTINGS}base.py
+
+          db_get booktype/language-code     
+          LANGUAGE_CODE=$RET
+          sed -i "s/LANGUAGE_CODE = 'en-us'/LANGUAGE_CODE = '${LANGUAGE_CODE}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
 
           cd ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}
-          #./manage.py syncdb --noinput
-          #./manage.py migrate
-          #./manage.py collectstatic
-          #./manage.py createsuperuser
+          ./manage.py syncdb --noinput
+          ./manage.py migrate
+          ./manage.py collectstatic
+          ./manage.py createsuperuser
 
         else
           echo -e "\n Directory already exists in ${DEFAULT_INSTANCE_DIR}${DEFAULT_INSTANCE_NAME}!"
