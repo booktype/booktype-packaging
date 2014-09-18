@@ -53,7 +53,7 @@ case "$1" in
 
           db_get booktype/database-password
           DATABASE_PASSWORD=$RET
-          sed -i "s/'PASSWORD: ''/'PASSWORD': '${DATABASE_PASSWORD}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
+          sed -i "s/'PASSWORD': ''/'PASSWORD': '${DATABASE_PASSWORD}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
 
           db_get booktype/database-host
           DATABASE_HOST=$RET
