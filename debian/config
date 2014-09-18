@@ -56,7 +56,7 @@ if [ "$RET" = "yes please" ]; then
         db_input high booktype/time-zone || true
         db_go ||true
 
-        db_input high booktype/interface-language || true
+        db_input high booktype/language-code || true
         db_go ||true
 
 fi

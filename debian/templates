@@ -152,7 +152,7 @@ _Description: Default instance time zone:
  Enter the time zone for your default Booktype instance.
  .
 
-Template: booktype/interface-language     
+Template: booktype/language-code    
 Type: string  
 Default: en-us
 _Description: Default instance interface language:
