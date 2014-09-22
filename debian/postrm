@@ -12,8 +12,10 @@ VIRTUAL_ENV_DIR="/var/lib/booktype"
 case "$1" in
   purge)
 
-      echo -e "\n*** Removing virtualenv from ${VIRTUAL_ENV_DIR} ***"
-      rm -r ${VIRTUAL_ENV_DIR}
+      if [ -d ${VIRTUAL_ENV_DIR} ]; then
+        echo -e "\n*** Removing virtualenv from ${VIRTUAL_ENV_DIR} ***"
+        rm -r ${VIRTUAL_ENV_DIR}
+      fi
 
   ;;
 
