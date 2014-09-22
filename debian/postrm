@@ -11,11 +11,11 @@ VIRTUAL_ENV_DIR="/var/lib/booktype/"
 
 case "$1" in
   purge|remove)
+
+      echo -e "\n*** Removing virtualenv from ${VIRTUAL_ENV_DIR} ***"
+      rm -r ${VIRTUAL_ENV_DIR}
+
   ;;
-
-  echo -e "\n*** Removing virtualenv from ${VIRTUAL_ENV_DIR} ***"
-
-  rm -r ${VIRTUAL_ENV_DIR}
 
   upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
   ;;
