@@ -182,7 +182,9 @@ case "$1" in
           ./manage.py migrate
           ./manage.py collectstatic --noinput
           ./manage.py compress
-          ./manage.py createsuperuser
+
+          echo "*** Creating superuser account ***"
+          ./manage.py createsuperuser --username=admin --email=${ADMIN_EMAIL} --noinput
 
         else
           echo -e "\n Directory already exists in ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}!"
