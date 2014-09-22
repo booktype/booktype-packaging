@@ -21,7 +21,16 @@ case "$1" in
   configure|reconfigure)
 
     echo -e "\n*** Installing Python libraries ***"
-    ${VIRTUAL_ENV_DIR}/bin/pip install ${VIRTUAL_ENV_DIR}/booktype-dependencies.pybundle || exit 1
+
+    if [ ! -d ${VIRTUAL_ENV_DIR}/lib/python2.7/site-packages/django ]; then
+
+      echo -e "\n*** Installing Python libraries ***"
+        ${VIRTUAL_ENV_DIR}/bin/pip install ${VIRTUAL_ENV_DIR}/booktype-dependencies.pybundle || exit 1
+
+    else
+      echo -e "\n*** Not installing Python libraries ***"
+
+    fi
 
     db_get booktype/server-setup
       if [ "$RET" == "yes please" ]; then

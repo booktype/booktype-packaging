@@ -14,13 +14,16 @@ case "$1" in
 
     VIRTUAL_ENV_DIR="/var/lib/booktype"
 
-    if [ -d $VIRTUAL_ENV_DIR ]; then
-       echo -e "\n*** Existing Booktype Virtualenv Found ***"
-       rm -rf ${VIRTUAL_ENV_DIR}
-    fi
+    if [ -d $VIRTUAL_ENV_DIR/lib/python2.7/site-packages/django ]; then
 
-    echo -e "\n*** Creating Virtualenv for Booktype ***"
-    virtualenv -p /usr/bin/python ${VIRTUAL_ENV_DIR} 2>/dev/null || exit 1
+       echo -e "\n*** Existing Booktype Virtualenv Found ***"
+
+    else
+
+       echo -e "\n*** Creating Virtualenv for Booktype ***"
+       virtualenv -p /usr/bin/python ${VIRTUAL_ENV_DIR} 2>/dev/null || exit 1
+
+    fi
 
   ;;
 
