@@ -67,7 +67,7 @@ case "$1" in
 
           db_get booktype/admin-name
           ADMIN_NAME=$RET
-          sed -i "s/'Your Name'/'${ADMIN_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/'Your Name'/'${ADMIN_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/admin-email
           ADMIN_EMAIL=$RET
