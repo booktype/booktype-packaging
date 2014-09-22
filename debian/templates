@@ -140,7 +140,7 @@ _Description: Redis database number:
 
 Template: booktype/redis-password
 Type: password
-Default: None     
+Default: None
 _Description: Redis password:
  Enter the Redis password, if your server requires one. The default is 'None'.
  .
