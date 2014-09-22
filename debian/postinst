@@ -139,7 +139,7 @@ case "$1" in
 
           echo "*** Beginning Apache configuration ***"
           sed -i "s/VIRTUAL_PATH=''/VIRTUAL_PATH='${VIRTUAL_ENV_DIR}'/" ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/wsgi.py
-          chown -R www-data.www-data ${DEFAULT_INSTANCE_DIR}
+          chown -R www-data:www-data ${DEFAULT_INSTANCE_DIR}
 
           # Get the major/minor version of Apache installed locally
           APACHE_VERSION=$(dpkg-query -f '${Version}' -W 'apache2' | cut -c 1-3)
