@@ -180,7 +180,7 @@ case "$1" in
           cd ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
           ./manage.py syncdb --noinput
           ./manage.py migrate
-          ./manage.py collectstatic
+          ./manage.py collectstatic --noinput
           ./manage.py compress
           ./manage.py createsuperuser
 
