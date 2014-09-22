@@ -9,20 +9,20 @@ if [ "$DPKG_DEBUG" = "developer" ]; then
     set -x
 fi
 
-    CONFIG_DIR="/etc/booktype/"
-    APACHE_TEMPLATE="${CONFIG_DIR}apache-virtual-host.tpl"
+    CONFIG_DIR="/etc/booktype"
+    APACHE_TEMPLATE="${CONFIG_DIR}/apache-virtual-host.tpl"
 
     DEFAULT_INSTANCE_DIR="/var/www/booktype"
     DEFAULT_INSTANCE_NAME="instance1"
-    DEFAULT_INSTANCE_SETTINGS="${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/settings/"
+    DEFAULT_INSTANCE_SETTINGS="${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/settings"
 
-    VIRTUAL_ENV_DIR="/var/lib/booktype/"
+    VIRTUAL_ENV_DIR="/var/lib/booktype"
 
 case "$1" in
   configure|reconfigure)
 
     echo -e "\n*** Installing Python libraries ***"
-    ${VIRTUAL_ENV_DIR}bin/pip install ${VIRTUAL_ENV_DIR}booktype-dependencies.pybundle || exit 1
+    ${VIRTUAL_ENV_DIR}/bin/pip install ${VIRTUAL_ENV_DIR}/booktype-dependencies.pybundle || exit 1
 
     db_get booktype/server-setup
       if [ "$RET" == "yes please" ]; then
@@ -30,7 +30,7 @@ case "$1" in
         echo "*** Beginning automatic configuration ***"
 
         echo -e "\n*** Activating virtualenv ***"
-        source ${VIRTUAL_ENV_DIR}bin/activate
+        source ${VIRTUAL_ENV_DIR}/bin/activate
         echo -e "\n Virtualenv in ${VIRTUAL_ENV_DIR} activated"
 
         echo -e "\n*** Creating Booktype instance ***"
@@ -39,29 +39,29 @@ case "$1" in
         fi
 
         if [ ! -d ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME} ]; then
-          ${VIRTUAL_ENV_DIR}scripts/createbooktype --check-versions --profile prod --database postgresql ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
+          ${VIRTUAL_ENV_DIR}/scripts/createbooktype --check-versions --profile prod --database postgresql ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
 
           echo "*** Setting database parameters ***"
 
           db_get booktype/database-name
           DATABASE_NAME=$RET
-          sed -i "s/'NAME': ''/'NAME': '${DATABASE_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
+          sed -i "s/'NAME': ''/'NAME': '${DATABASE_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
 
           db_get booktype/database-user
           DATABASE_USER=$RET
-          sed -i "s/'USER': ''/'USER': '${DATABASE_USER}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
+          sed -i "s/'USER': ''/'USER': '${DATABASE_USER}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
 
           db_get booktype/database-password
           DATABASE_PASSWORD=$RET
-          sed -i "s/'PASSWORD': ''/'PASSWORD': '${DATABASE_PASSWORD}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
+          sed -i "s/'PASSWORD': ''/'PASSWORD': '${DATABASE_PASSWORD}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
 
           db_get booktype/database-host
           DATABASE_HOST=$RET
-          sed -i "s/'HOST': ''/'HOST': '${DATABASE_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
+          sed -i "s/'HOST': ''/'HOST': '${DATABASE_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
 
           db_get booktype/database-port
           DATABASE_PORT=$RET
-          sed -i "s/'PORT': ''/'PORT': '${DATABASE_PORT}'/" ${DEFAULT_INSTANCE_SETTINGS}prod.py
+          sed -i "s/'PORT': ''/'PORT': '${DATABASE_PORT}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
 
           echo "*** Setting admin name and email ***"
 
@@ -71,71 +71,71 @@ case "$1" in
 
           db_get booktype/admin-email
           ADMIN_EMAIL=$RET
-          sed -i "s/'your_email@domain.com'/'${ADMIN_EMAIL}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/'your_email@domain.com'/'${ADMIN_EMAIL}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Setting the active profile to 'production' ***"
 
-          sed -i "s/PROFILE_ACTIVE = ''/PROFILE_ACTIVE = 'prod'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/PROFILE_ACTIVE = ''/PROFILE_ACTIVE = 'prod'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Setting Booktype site name and URL ***"
 
           db_get booktype/booktype-site-name
           BOOKTYPE_SITE_NAME=$RET
-          sed -i "s/BOOKTYPE_SITE_NAME = None/BOOKTYPE_SITE_NAME = '${BOOKTYPE_SITE_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/BOOKTYPE_SITE_NAME = None/BOOKTYPE_SITE_NAME = '${BOOKTYPE_SITE_NAME}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/this-booktype-server
           THIS_BOOKTYPE_SERVER=$RET
-          sed -i "s/THIS_BOOKTYPE_SERVER = ''/THIS_BOOKTYPE_SERVER = '${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
-          sed -i "s/BOOKTYPE_URL = ''/BOOKTYPE_URL = 'http:\/\/${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/THIS_BOOKTYPE_SERVER = ''/THIS_BOOKTYPE_SERVER = '${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
+          sed -i "s/BOOKTYPE_URL = ''/BOOKTYPE_URL = 'http:\/\/${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Setting report email user ***"
 
           db_get booktype/report-email-user
           REPORT_EMAIL_USER=$RET
-          sed -i "s/REPORT_EMAIL_USER = 'booktype@booktype.pro'/REPORT_EMAIL_USER = '${REPORT_EMAIL_USER}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/REPORT_EMAIL_USER = 'booktype@booktype.pro'/REPORT_EMAIL_USER = '${REPORT_EMAIL_USER}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Setting email host and port ***"
 
           db_get booktype/email-host
           EMAIL_HOST=$RET
-          sed -i "s/EMAIL_HOST = 'localhost'/EMAIL_HOST = '${EMAIL_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/EMAIL_HOST = 'localhost'/EMAIL_HOST = '${EMAIL_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/email-port
           EMAIL_PORT=$RET
-          sed -i "s/EMAIL_PORT = 25/EMAIL_PORT = ${EMAIL_PORT}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/EMAIL_PORT = 25/EMAIL_PORT = ${EMAIL_PORT}/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/default-publisher
           DEFAULT_PUBLISHER=$RET
           echo "*** Setting default publisher to ${DEFAULT_PUBLISHER} ***"
-          sed -i "s/DEFAULT_PUBLISHER = \"Unknown\"/DEFAULT_PUBLISHER = \"${DEFAULT_PUBLISHER}\"/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/DEFAULT_PUBLISHER = \"Unknown\"/DEFAULT_PUBLISHER = \"${DEFAULT_PUBLISHER}\"/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Setting Redis parameters ***"
 
           db_get booktype/redis-host
           REDIS_HOST=$RET
-          sed -i "s/REDIS_HOST = 'localhost'/REDIS_HOST = '${REDIS_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/REDIS_HOST = 'localhost'/REDIS_HOST = '${REDIS_HOST}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/redis-port
           REDIS_PORT=$RET
-          sed -i "s/REDIS_PORT = 6379/REDIS_PORT = ${REDIS_PORT}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/REDIS_PORT = 6379/REDIS_PORT = ${REDIS_PORT}/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/redis-db
           REDIS_DB=$RET
-          sed -i "s/REDIS_DB = 0/REDIS_DB = ${REDIS_DB}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/REDIS_DB = 0/REDIS_DB = ${REDIS_DB}/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/redis-password
           REDIS_PASSWORD=$RET
-          sed -i "s/REDIS_PASSWORD = None/REDIS_PASSWORD = ${REDIS_PASSWORD}/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/REDIS_PASSWORD = None/REDIS_PASSWORD = ${REDIS_PASSWORD}/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/time-zone
           TIME_ZONE=$RET
           echo "*** Setting default time zone to ${TIME_ZONE} ***"
-          sed -i "s:TIME_ZONE = 'Europe/Berlin':TIME_ZONE = '${TIME_ZONE}':" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s:TIME_ZONE = 'Europe/Berlin':TIME_ZONE = '${TIME_ZONE}':" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           db_get booktype/language-code     
           LANGUAGE_CODE=$RET
           echo "*** Setting default language code to ${LANGUAGE_CODE} ***"
-          sed -i "s/LANGUAGE_CODE = 'en-us'/LANGUAGE_CODE = '${LANGUAGE_CODE}'/" ${DEFAULT_INSTANCE_SETTINGS}base.py
+          sed -i "s/LANGUAGE_CODE = 'en-us'/LANGUAGE_CODE = '${LANGUAGE_CODE}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Beginning Apache configuration ***"
           sed -i "s:VIRTUAL_PATH='':VIRTUAL_PATH='${VIRTUAL_ENV_DIR}':" ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/wsgi.py

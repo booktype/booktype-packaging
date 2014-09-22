@@ -7,7 +7,7 @@ if [ "$DPKG_DEBUG" = "developer" ]; then
     set -x
 fi
 
-VIRTUAL_ENV_DIR="/var/lib/booktype/"
+VIRTUAL_ENV_DIR="/var/lib/booktype"
 
 case "$1" in
   purge|remove)
