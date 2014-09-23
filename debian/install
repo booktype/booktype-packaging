@@ -3,4 +3,3 @@ scripts var/lib/booktype
 debian/usr/share/man/man1 usr/share/man
 debian/usr/share/lintian/overrides/booktype usr/share/lintian/overrides
 debian/booktype-dependencies.pybundle var/lib/booktype
-debian/etc/booktype/apache-virtual-host.tpl etc/booktype
