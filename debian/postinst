@@ -37,16 +37,18 @@ case "$1" in
 
         echo "*** Beginning automatic configuration ***"
 
-        echo -e "\n*** Activating virtualenv ***"
-        source ${VIRTUAL_ENV_DIR}/bin/activate
-        echo -e "\n Virtualenv in ${VIRTUAL_ENV_DIR} activated"
-
-        echo -e "\n*** Creating Booktype instance ***"
+        echo -e "\n*** Creating instance directory ${DEFAULT_INSTANCE_DIR} ***"
         if [ ! -d ${DEFAULT_INSTANCE_DIR} ]; then
           mkdir -p ${DEFAULT_INSTANCE_DIR}
         fi
 
         if [ ! -d ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME} ]; then
+
+          echo -e "\n*** Activating virtualenv ***"
+          source ${VIRTUAL_ENV_DIR}/bin/activate
+          echo -e "\n Virtualenv in ${VIRTUAL_ENV_DIR} activated"
+
+          echo -e "\n*** Creating default instance ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME} ***"
           ${VIRTUAL_ENV_DIR}/scripts/createbooktype --check-versions --profile prod --database postgresql ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
 
           echo "*** Setting database parameters ***"
