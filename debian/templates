@@ -11,7 +11,7 @@ _Description: Set up server automatically:
  the Booktype instance and create a virtual host configuration for Apache.
  .
  If you choose 'no thanks', that's no problem. You're welcome to set it up
- however you like. The files in /etc/booktype/ may come in handy.
+ however you like.
  .
 
 Template: booktype/database-name
