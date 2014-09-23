@@ -150,8 +150,6 @@ case "$1" in
           echo "*** Setting virtual path to ${VIRTUAL_ENV_DIR} ***"
           sed -i "s:VIRTUAL_PATH='':VIRTUAL_PATH='${VIRTUAL_ENV_DIR}':" ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/wsgi.py
 
-          chown -R www-data:www-data ${DEFAULT_INSTANCE_DIR}
-
           # create an Apache configuration if it does not already exist
           if [ ! -f /etc/apache2/sites-available/booktype-${DEFAULT_INSTANCE_NAME}.conf ] ; then 
 
@@ -174,7 +172,6 @@ case "$1" in
             echo "*** Enabling the Apache virtual server ***"
             cp ${APACHE_TEMPLATE} /etc/apache2/sites-available/booktype-${DEFAULT_INSTANCE_NAME}.conf
             a2ensite booktype-${DEFAULT_INSTANCE_NAME}.conf
-            service apache2 reload
 
           fi
 
@@ -184,6 +181,10 @@ case "$1" in
           ./manage.py migrate
           ./manage.py collectstatic --noinput
           ./manage.py compress
+
+          echo "*** Reloading the Apache web server ***"
+          chown -R www-data:www-data ${DEFAULT_INSTANCE_DIR}
+          service apache2 reload
 
         else
           echo -e "\n Directory already exists in ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}!"
