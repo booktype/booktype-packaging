@@ -1,10 +1,12 @@
 #/bin/sh
 # Script for generating nightly Booktype snapshot packages
-# Set GITPATH to the directory containg the Booktype source
+# Set GITPATH to the directory containing the Booktype source
+# Set PKGPATH to the directory containing the packaging scripts
 
 VERSION=2.0.0~$(date "+%Y%m%d")
 REVISION=1
-GITPATH=../booktype/
+GITPATH=~/64studio/git/booktype/
+PKGPATH=~/64studio/git/booktype-packaging/
 BUILDDEST=/tmp/booktype-${VERSION}/
 ORIGBALL=/tmp/booktype_${VERSION}.orig.tar.gz
 
@@ -13,26 +15,26 @@ echo "cleaning up previous build..."
 rm -rf /tmp/booktype-*
 mkdir ${BUILDDEST}
 
-echo "copying files to temporary directory..."
-
-cp -a debian ${BUILDDEST} || exit
+echo "copying Booktype files to temporary directory..."
 
 cd ${GITPATH}
 git checkout 2.0
 git pull origin 2.0
 cp -a * ${BUILDDEST} || exit
 
-echo "creating the source tarball..."
-tar -cvzf ${ORIGBALL} ${GITPATH}
-
 cd ${BUILDDEST} || exit
 
-# Build the documentation then move it out of the way
+# Build the documentation then move it into place
 
 python setup.py build_sphinx
-mv build/ _build/
-rm -r docs/_build/
-mv _build/ docs/
+rm -r docs/_build
+mv build docs/_build
+
+echo "creating the source tarball..."
+tar -cvzf ${ORIGBALL} *
+
+echo "copying the packaging files..."
+cp -a ${PKGPATH}debian ${BUILDDEST} || exit
 
 # Set the version of the snapshot package
 
