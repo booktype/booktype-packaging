@@ -167,6 +167,10 @@ case "$1" in
 
             #sed -i "s/#ADMIN_EMAIL/${ADMIN_EMAIL}/" ${APACHE_TEMPLATE}
 
+            # Convert language code into locale code with uppercase suffix and underscore
+            LOCALE_CODE=$(echo ${LANGUAGE_CODE} | sed 's/-../\U&/' | sed 's/-/_/')
+            sed -i "s/en_GB.UTF-8/${LOCALE_CODE}.UTF-8/" ${APACHE_TEMPLATE}
+
             echo "*** Enabling the Apache virtual server ***"
             cp ${APACHE_TEMPLATE} /etc/apache2/sites-available/booktype-${DEFAULT_INSTANCE_NAME}.conf
             a2ensite booktype-${DEFAULT_INSTANCE_NAME}.conf
