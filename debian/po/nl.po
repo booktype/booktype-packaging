@@ -1,4 +1,4 @@
-# Booktype installation questions for Debconf.
+# Dutch (nl) translation of Booktype installation questions for Debconf.
 # Copyright (C) 2014 Booktype contributors
 # This file is distributed under the same license as the Booktype package.
 # 
@@ -6,7 +6,7 @@
 # Bart de Goede <bart@dispectu.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Booktype\n"
+"Project-Id-Version: Booktype 2.0\n"
 "Report-Msgid-Bugs-To: contact@sourcefabric.org\n"
 "POT-Creation-Date: 2014-09-16 16:04+0100\n"
 "PO-Revision-Date: 2014-10-24 14:21+0000\n"

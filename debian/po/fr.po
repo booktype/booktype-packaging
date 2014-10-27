@@ -1,4 +1,4 @@
-# Booktype installation questions for Debconf.
+# French (fr) translation of Booktype installation questions for Debconf.
 # Copyright (C) 2014 Booktype contributors
 # This file is distributed under the same license as the Booktype package.
 #
@@ -7,7 +7,7 @@
 # jazzynico <nicoduf@yahoo.fr>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Booktype\n"
+"Project-Id-Version: Booktype 2.0\n"
 "Report-Msgid-Bugs-To: contact@sourcefabric.org\n"
 "POT-Creation-Date: 2014-09-16 16:04+0100\n"
 "PO-Revision-Date: 2014-10-07 12:03+0100\n"
