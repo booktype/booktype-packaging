@@ -4,8 +4,7 @@ README.txt
 VERSION.txt
 requirements/_base.txt
 requirements/dev.txt
-requirements/postgresql.txt
+requirements/prod.txt
 requirements/README.txt
-requirements/sqlite.txt
 lib/booki/messaging/README.txt
 docs/_build/sphinx/html

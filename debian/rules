@@ -9,4 +9,4 @@ export PYBUILD_NAME=booktype
 override_dh_auto_test:
 #	cd tests && ./start_functests.sh
 #	cd tests && ./start_seleniumtests.sh
-	cd tests && ./start_tests.sh
+#	cd tests && ./start_tests.sh

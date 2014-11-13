@@ -1,0 +1,339 @@
+# Albanian (sq) translation of Booktype installation questions for Debconf.
+# Copyright (C) 2014 Booktype contributors
+# This file is distributed under the same license as the Booktype package.
+# 
+# Translators:
+# Besnik Bleta <besnik@programeshqip.org> 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Booktype 2.0\n"
+"Report-Msgid-Bugs-To: contact@sourcefabric.org\n"
+"POT-Creation-Date: 2014-09-16 16:04+0100\n"
+"PO-Revision-Date: 2014-10-25 07:31+0000\n"
+"Last-Translator: Besnik <besnik@programeshqip.org>\n"
+"Language-Team: Albanian (http://www.transifex.com/projects/p/booktype/language/sq/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: select
+#. Choices
+#. Type: select
+#. Default
+#. Translators: please translate this default value
+#: ../templates:1001 ../templates:1002
+msgid "yes please"
+msgstr "po, ju lutem"
+
+#. Type: select
+#. Choices
+#: ../templates:1001
+msgid "no thanks"
+msgstr "jo, faleminderit"
+
+#. Type: select
+#. Description
+#: ../templates:1003
+msgid "Set up server automatically:"
+msgstr "Rregulloje vetvetiu shërbyesin:"
+
+#. Type: select
+#. Description
+#: ../templates:1003
+msgid ""
+"This script can perform automatic configuration of a default instance, so "
+"that you can begin using Booktype directly after installation."
+msgstr "Ky programth mund të kryejë formësim të vetvetishëm të një instance parazgjedhje, që kështu të mund të filloni të përdorni Booktype-in drejt e pas instalimit."
+
+#. Type: select
+#. Description
+#: ../templates:1003
+msgid ""
+"Choose 'yes please' and the script will ask for details in order to set up "
+"the Booktype instance and create a virtual host configuration for Apache."
+msgstr "Zgjidhni 'po, ju lutem' dhe programthi do të kërkojë hollësi me qëllim rregullimin e instancës së Booktype-it dhe krijimin e një formësimi strehe virtuale për Apache-in."
+
+#. Type: select
+#. Description
+#: ../templates:1003
+msgid ""
+"If you choose 'no thanks', that's no problem. You're welcome to set it up "
+"however you like."
+msgstr "Nëse zgjidhni 'jo, faleminderit', nuk ka problem. Jeni i mirëpritur ta rregulloni kurdo që të dëshironi."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Name of the Booktype database:"
+msgstr "Emër baze të dhënash Booktype:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Enter the name of the database for Booktype to use."
+msgstr "Jepni emrin e bazës së të dhënave për përdorim nga Booktype-i. "
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Booktype database owner username:"
+msgstr "Emër përdoruesi i të zotit të bazës së të dhënave Booktype:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Enter the username of the Booktype database owner."
+msgstr "Jepni emrin e përdoruesit të të zotit të bazës së të dhënave Booktype:"
+
+#. Type: password
+#. Description
+#: ../templates:4001
+msgid "Password for the Booktype database:"
+msgstr "Fjalëkalim për bazën e të dhënave Booktype:"
+
+#. Type: password
+#. Description
+#: ../templates:4001
+msgid "Enter the password for the database which Booktype will use."
+msgstr "Jepni fjalëkalimin për te baza e të dhënave të cilën do të përdorë Booktype-i:"
+
+#. Type: string
+#. Description
+#: ../templates:5001
+msgid "Booktype database host:"
+msgstr "Strehë baze të dhënash Booktype:"
+
+#. Type: string
+#. Description
+#: ../templates:5001
+msgid "Enter the hostname of the machine serving the Booktype database."
+msgstr "Jepni emërstrehën makinës që shërben bazën e të dhënave Booktype."
+
+#. Type: string
+#. Description
+#: ../templates:6001
+msgid "Booktype database port:"
+msgstr "Portë baze të dhënash Booktype:"
+
+#. Type: string
+#. Description
+#: ../templates:6001
+msgid ""
+"Enter the port number that your database server uses. The default for "
+"PostgreSQL database servers is 5432."
+msgstr "Jepni numrin e portës që përdor shërbyesi juaj i bazës së të dhënave. Për shërbyes bazash të dhënash PostgreSQL parazgjedhja është 5432."
+
+#. Type: string
+#. Default
+#. Translators: please translate this default value
+#: ../templates:7001
+msgid "Booktype Administrator"
+msgstr "Administrues Booktype-i"
+
+#. Type: string
+#. Description
+#: ../templates:7002
+msgid "Name of the Booktype server administrator:"
+msgstr "Emër përgjegjësi shërbyesi Booktype:"
+
+#. Type: string
+#. Description
+#: ../templates:7002
+msgid ""
+"Enter the name of the system administrator for your Booktype users to "
+"contact."
+msgstr "Jepni emrin e përgjegjësit të sistemit me të cilin do të duhej të lidheshin përdoruesit e Booktype-it tuaj."
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid "Email address of the Booktype server administrator:"
+msgstr "Adresë email e përgjegjësit të shërbyesit Booktype:"
+
+#. Type: string
+#. Description
+#: ../templates:8001
+msgid ""
+"Enter the email address of the system administrator for your Booktype users "
+"to contact."
+msgstr "Jepni adresën email të përgjegjësit të sistemit me të cilin do të duhej të lidheshin përdoruesit e Booktype-it tuaj."
+
+#. Type: string
+#. Default
+#. Translators: please translate this default value
+#: ../templates:9001
+msgid "Booktype Site"
+msgstr "Sajt Booktype"
+
+#. Type: string
+#. Description
+#: ../templates:9002
+msgid "Name of the default Booktype instance:"
+msgstr "Emër për instancën parazgjedhje të Booktype-it:"
+
+#. Type: string
+#. Description
+#: ../templates:9002
+msgid ""
+"Enter the name of the default Booktype instance, which will be shown in the "
+"user interface template for that instance."
+msgstr "Jepni emrin e instalimit tuaj parazgjedhje Booktype, i cili do të shfaqet te gjedhja e ndërfaqes së përdoruesve për atë instalim."
+
+#. Type: string
+#. Description
+#: ../templates:10001
+msgid "Domain name of the default Booktype instance:"
+msgstr "Emër përkatësie për instancën parazgjedhje të Booktype-it:"
+
+#. Type: string
+#. Description
+#: ../templates:10001
+msgid ""
+"Enter the domain name of the default Booktype instance. The DNS record for "
+"this domain name must resolve to the Apache server running on this machine, "
+"for example:"
+msgstr "Jepni emrin e përkatësisë për instalimin parazgjedhje të Booktype-it. Regjistrimi DNS për këtë përkatësi duhet të pasqyrojë shërbyesin Apache që po xhiron në këtë makinë, për shembull:"
+
+#. Type: string
+#. Description
+#: ../templates:10001
+msgid "booktype.example.com"
+msgstr "booktype.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:11001
+msgid "Report email user:"
+msgstr "Email përdoruesi për raporte:"
+
+#. Type: string
+#. Description
+#: ../templates:11001
+msgid ""
+"Enter the 'From' address for Booktype to use when sending management "
+"reports."
+msgstr "Jepni adresën për 'Nga' për Booktype-it, e cila të përdoret kur dërgohen raporte administrimi."
+
+#. Type: string
+#. Description
+#: ../templates:12001
+msgid "Email host:"
+msgstr "Strehë email-i:"
+
+#. Type: string
+#. Description
+#: ../templates:12001
+msgid "Enter the mail server for Booktype to use when sending email."
+msgstr "Jepni shërbyesin e postës për Booktype-in, për t’u përdorur kur dërgohet email."
+
+#. Type: string
+#. Description
+#: ../templates:13001
+msgid "Email port:"
+msgstr "Portë email-i:"
+
+#. Type: string
+#. Description
+#: ../templates:13001
+msgid "Enter the SMTP port for Booktype to use when sending email."
+msgstr "Jepni portën SMTP për Booktype-in, për t’u përdorur kur dërgohet email."
+
+#. Type: string
+#. Default
+#. Translators: please translate this default value
+#: ../templates:14001
+msgid "Unknown"
+msgstr "E panjohur"
+
+#. Type: string
+#. Description
+#: ../templates:14002
+msgid "Default publisher:"
+msgstr "Botues parazgjedhje:"
+
+#. Type: string
+#. Description
+#: ../templates:14002
+msgid "Enter the name of the default publisher for new books."
+msgstr "Jepni emrin e botuesit parazgjedhje për libra të rinj."
+
+#. Type: string
+#. Description
+#: ../templates:15001
+msgid "Redis host:"
+msgstr "Strehë Redis:"
+
+#. Type: string
+#. Description
+#: ../templates:15001
+msgid ""
+"Enter the Redis server hostname. For a typical installation, you can use the"
+" default of 'localhost'."
+msgstr "Jepni emërstrehën e shërbyesit Redis. Për një instalim të zakonshëm mund të përdorni parazgjedhjen 'localhost'."
+
+#. Type: string
+#. Description
+#: ../templates:16001
+msgid "Redis port:"
+msgstr "Portë Redis:"
+
+#. Type: string
+#. Description
+#: ../templates:16001
+msgid ""
+"Enter the port number that your Redis server uses. The default port is 6379."
+msgstr "Jepni numrin e portës që përdor shërbyesi juaj Redis. Porta parazgjedhje është 6379."
+
+#. Type: string
+#. Description
+#: ../templates:17001
+msgid "Redis database number:"
+msgstr "Numër baze të dhënash Redis:"
+
+#. Type: string
+#. Description
+#: ../templates:17001
+msgid ""
+"Enter the number of the Redis database. If you only have one application "
+"using the Redis server, this value can be the default of zero."
+msgstr "Jepni numrin e bazës së të dhënave Redis. Nëse keni vetëm një zbatim që përdor shërbyesin Redis, kjo vlerë mund të lihet sa parazgjedhja zero."
+
+#. Type: password
+#. Description
+#: ../templates:18001
+msgid "Redis password:"
+msgstr "Fjalëkalim Redis:"
+
+#. Type: password
+#. Description
+#: ../templates:18001
+msgid ""
+"Enter the Redis password, if your server requires one. The default is "
+"'None'."
+msgstr "Jepni fjalëkalimin për te Redis, nëse shërbyesi juaj lyp një të tillë. Parazgjedhja është 'None'."
+
+#. Type: string
+#. Description
+#: ../templates:19001
+msgid "Default instance time zone:"
+msgstr "Zonë kohore parazgjedhje për instancën:"
+
+#. Type: string
+#. Description
+#: ../templates:19001
+msgid "Enter the time zone for your default Booktype instance."
+msgstr "Jepni zonën kohore për instancën tuaj parazgjedhjeje të Booktype-it."
+
+#. Type: string
+#. Description
+#: ../templates:20001
+msgid "Default instance interface language:"
+msgstr "Gjuhë ndërfaqeje parazgjedhje për instancën:"
+
+#. Type: string
+#. Description
+#: ../templates:20001
+msgid "Enter the interface language code for your default Booktype instance."
+msgstr "Jepni kodin e gjuhës së ndërfaqes për instalimin tuaj parazgjedhje të Booktype-it."

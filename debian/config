@@ -1,0 +1,66 @@
+#!/bin/bash
+# Debconf config script for Booktype
+
+set -e
+
+### dbconfig is not yet enabled. ###
+
+. /usr/share/debconf/confmodule
+
+db_input high booktype/server-setup || true
+db_go ||true
+
+db_get booktype/server-setup
+if [ "$RET" = "yes please" ]; then
+
+	db_input high booktype/database-name || true
+	db_go ||true
+	db_input high booktype/database-user || true
+	db_go ||true
+        db_input high booktype/database-password || true
+        db_go ||true
+        db_input high booktype/database-host || true
+        db_go ||true
+        db_input high booktype/database-port || true
+        db_go ||true
+
+        db_input high booktype/admin-name || true
+        db_go ||true
+        db_input high booktype/admin-email || true
+        db_go ||true
+
+        db_input high booktype/booktype-site-name || true
+        db_go ||true
+        db_input high booktype/this-booktype-server || true
+        db_go ||true
+
+        db_input high booktype/report-email-user || true
+        db_go ||true
+        db_input high booktype/email-host || true
+        db_go ||true
+        db_input high booktype/email-port || true
+        db_go ||true
+
+        db_input high booktype/default-publisher || true
+        db_go ||true
+
+        db_input high booktype/redis-host || true
+        db_go ||true
+        db_input high booktype/redis-port || true
+        db_go ||true
+        db_input high booktype/redis-db || true
+        db_go ||true
+        db_input high booktype/redis-password || true
+        db_go ||true
+
+        db_input high booktype/time-zone || true
+        db_go ||true
+
+        db_input high booktype/language-code || true
+        db_go ||true
+
+fi
+
+#DEBHELPER#
+
+exit 0
