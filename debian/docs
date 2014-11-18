@@ -1,5 +1,4 @@
 AUTHORS.txt
-CHANGES.txt
 README.txt
 VERSION.txt
 requirements/_base.txt
@@ -7,4 +6,4 @@ requirements/dev.txt
 requirements/prod.txt
 requirements/README.txt
 lib/booki/messaging/README.txt
-docs/_build/sphinx/html
+_build/html
