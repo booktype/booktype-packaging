@@ -69,7 +69,7 @@ License: Expat
 
 Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/align/
 Copyright: 2010 Thomas Lété
-License: LGPL
+License: LGPL-3
 
 Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/undo/vendor/diff_match_patch_uncompressed.js
 Copyright: 2006 Google Inc.
@@ -820,7 +820,7 @@ License: GPL-2+
  On Debian systems, the full text of the GNU General Public License version 2
  can be found in the /usr/share/common-licenses/GPL-2 file.
 
-License: LGPL
+License: LGPL-3
  This program is free software; you can redistribute it and/or modify it under
  the terms of the GNU Lesser General Public License as published by the Free
  Software Foundation.
@@ -835,7 +835,7 @@ License: LGPL
  Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
  .
  On Debian systems, the full text of the GNU Lesser General Public License can
- be found in the /usr/share/common-licenses/LGPL file.
+ be found in the /usr/share/common-licenses/LGPL-3 file.
 
 License: Apache-2.0
  Licensed under the Apache License, Version 2.0 (the "License");
