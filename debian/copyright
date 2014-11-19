@@ -67,7 +67,7 @@ Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/vendor/jquery-1.5.1.js li
 Copyright: 2011 John Resig, The Dojo Foundation
 License: Expat
 
-Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/align/
+Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/align/*
 Copyright: 2010 Thomas Lété
 License: LGPL-3
 
@@ -99,7 +99,7 @@ Files: lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/ui/*
 Copyright: 2011 jQuery UI authors (http://jqueryui.com/about)
 License: Expat
 
-Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/util/range-context.js lib/booktype/apps/edit/static/edit/js/aloha/lib/util/browser-fixes.js lib/booktype/apps/edit/static/edit/js/aloha/plugins/booktype/bookundo/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/booktype/bookalign/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/googletranslate/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/linkchecker/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/profiler/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/speak/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/comments/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/draganddropfiles/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/textcolor/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/attributes/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/zemanta/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/hints/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/contenthandler/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/link/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/oer/format/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/undo/*
+Files: lib/booktype/apps/edit/static/edit/js/aloha/lib/util/range-context.js lib/booktype/apps/edit/static/edit/js/aloha/lib/util/browser-fixes.js lib/booktype/apps/edit/static/edit/js/aloha/plugins/booktype/bookundo/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/booktype/bookalign/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/googletranslate/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/linkchecker/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/profiler/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/speak/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/comments/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/draganddropfiles/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/textcolor/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/attributes/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/zemanta/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/hints/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/contenthandler/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/link/* lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/undo/*
 Copyright: 2010-2012 Gentics Software GmbH
 License: GPL-2+
 
