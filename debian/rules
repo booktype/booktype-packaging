@@ -6,7 +6,11 @@ export PYBUILD_NAME=booktype
 %:
 	dh $@ --with python2,sphinxdoc --buildsystem=pybuild
 
+override_dh_auto_build:
+	dh_auto_build
+	PYTHONPATH=. http_proxy='127.0.0.1:9' sphinx-build -N -bhtml docs/ _build/html # HTML generator
+
 override_dh_auto_test:
-#	cd tests && ./start_functests.sh
-#	cd tests && ./start_seleniumtests.sh
-#	cd tests && ./start_tests.sh
+#	PYBUILD_SYSTEM=custom \
+#	PYBUILD_TEST_ARGS="./tests/manage.py test booktype" \
+#	dh_auto_test
