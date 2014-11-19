@@ -1,5 +1,2 @@
 # lib/booki/editor/sql/license.sql is not a duplicate license text
 booktype binary: extra-license-file var/lib/booktype/lib/booki/editor/sql/license.sql
-
-# Ubuntu does not recognise Debian distribution names
-booktype binary: bad-distribution-in-changes-file unstable
