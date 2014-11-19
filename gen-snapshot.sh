@@ -24,22 +24,6 @@ cp -a * ${BUILDDEST} || exit
 
 cd ${BUILDDEST} || exit
 
-# Build the documentation then move it into place
-
-python setup.py build_sphinx
-rm -r docs/_build
-mv build docs/_build
-
-echo "creating the source tarball..."
-tar -cvzf ${ORIGBALL} *
-
-echo "copying the packaging files..."
-cp -a ${PKGPATH}debian ${BUILDDEST} || exit
-
-# Set the version of the snapshot package
-
-sed -i "1s:(2.0.0-1):(${VERSION}-${REVISION}):g" debian/changelog
-
 # Fixes for 2.0.0  #############
 
 # moved to debian/copyright
@@ -52,6 +36,16 @@ chmod +x scripts/cron_reports.sh.original
 chmod +x scripts/cron_reports_weekly.sh.original
 chmod +x lib/booktype/skeleton/manage.py.original
 chmod +x lib/sputnik/redis-backuo.py
+
+echo "creating the source tarball..."
+tar -cvzf ${ORIGBALL} *
+
+echo "copying the packaging files..."
+cp -a ${PKGPATH}debian ${BUILDDEST} || exit
+
+# Set the version of the snapshot package
+
+sed -i "1s:(2.0.0-1):(${VERSION}-${REVISION}):g" debian/changelog
 
 #############################
 
