@@ -184,6 +184,7 @@ case "$1" in
           ./manage.py collectstatic --noinput
           ./manage.py compress
           ./manage.py update_permissions
+          ./manage.py update_default_roles
 
           echo "*** Reloading the Apache web server ***"
           chown -R www-data:www-data ${DEFAULT_INSTANCE_DIR}
