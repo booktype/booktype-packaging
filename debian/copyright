@@ -136,7 +136,11 @@ Copyright: 2009 Ludovico Magnocavallo
 License: Expat
 
 Files: debian/*
-Copyright: 2013-2014 Daniel James <daniel@64studio.com>
+Copyright: 2013-2015 Daniel James <daniel@64studio.com>
+License: AGPL-3
+
+Files: debian/po/*.po
+Copyright: 2013-2015 Adriano Miyashiro, Albert Bruc, Bart de Goede, Besnik Bleta, Eva Dangendorf, Felipe Thomaz Pedroni, Paul Graabein, Pedro Garbellini da Silva
 License: AGPL-3
 
 License: AGPL-3
