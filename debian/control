@@ -22,6 +22,7 @@ Depends: apache2-mpm-prefork,
  python-dev,
  python-virtualenv,
  redis-server (>= 2:2.8),
+ tidy,
  ${misc:Depends},
  ${sphinxdoc:Depends}
 Recommends: postgresql
