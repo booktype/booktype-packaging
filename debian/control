@@ -23,6 +23,7 @@ Depends: apache2-mpm-prefork,
  python-virtualenv,
  rabbitmq-server,
  redis-server (>= 2:2.8),
+ supervisor,
  tidy,
  ${misc:Depends},
  ${sphinxdoc:Depends}
