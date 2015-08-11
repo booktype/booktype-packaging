@@ -28,6 +28,7 @@ Depends: apache2-mpm-prefork,
  ${misc:Depends},
  ${sphinxdoc:Depends}
 Recommends: postgresql
+Suggests: calibre
 Description: collaborative writing and publishing platform for print or ebooks
  Booktype is a free, open source platform that produces beautiful, engaging 
  books formatted for print, Amazon, iBooks and almost any ebook reader within 
