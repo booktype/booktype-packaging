@@ -1,17 +1,16 @@
-# Albanian (sq) translation of Booktype installation questions for Debconf.
+# Booktype installation questions for Debconf.
 # Copyright (C) 2014 Booktype contributors
 # This file is distributed under the same license as the Booktype package.
 # 
 # Translators:
-# Besnik Bleta <besnik@programeshqip.org> 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Booktype 2.0\n"
+"Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: contact@sourcefabric.org\n"
 "POT-Creation-Date: 2014-09-16 16:04+0100\n"
-"PO-Revision-Date: 2014-10-25 07:31+0000\n"
+"PO-Revision-Date: 2015-05-06 09:35+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
-"Language-Team: Albanian (http://www.transifex.com/projects/p/booktype/language/sq/)\n"
+"Language-Team: Albanian (http://www.transifex.com/sourcefabric/booktype/language/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,7 +44,7 @@ msgstr "Rregulloje vetvetiu shërbyesin:"
 msgid ""
 "This script can perform automatic configuration of a default instance, so "
 "that you can begin using Booktype directly after installation."
-msgstr "Ky programth mund të kryejë formësim të vetvetishëm të një instance parazgjedhje, që kështu të mund të filloni të përdorni Booktype-in drejt e pas instalimit."
+msgstr "Ky programth mund të kryejë formësim të vetvetishëm të një instance parazgjedhje, që kështu të mund të filloni të përdorni Booktype-in fill pas instalimit."
 
 #. Type: select
 #. Description
@@ -61,7 +60,7 @@ msgstr "Zgjidhni 'po, ju lutem' dhe programthi do të kërkojë hollësi me qël
 msgid ""
 "If you choose 'no thanks', that's no problem. You're welcome to set it up "
 "however you like."
-msgstr "Nëse zgjidhni 'jo, faleminderit', nuk ka problem. Jeni i mirëpritur ta rregulloni kurdo që të dëshironi."
+msgstr "Nëse zgjidhni 'jo, faleminderit', s’ka problem. Jeni i mirëpritur ta rregulloni kurdo që të dëshironi."
 
 #. Type: string
 #. Description
@@ -109,7 +108,7 @@ msgstr "Strehë baze të dhënash Booktype:"
 #. Description
 #: ../templates:5001
 msgid "Enter the hostname of the machine serving the Booktype database."
-msgstr "Jepni emërstrehën makinës që shërben bazën e të dhënave Booktype."
+msgstr "Jepni emërstrehën e makinës që shërben bazën e të dhënave Booktype."
 
 #. Type: string
 #. Description
