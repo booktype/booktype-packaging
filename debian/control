@@ -15,6 +15,7 @@ Pre-Depends: dpkg (>= 1.15.6~)
 Depends: apache2-mpm-prefork,
  build-essential,
  libapache2-mod-wsgi,
+ libjpeg-dev,
  libpq-dev,
  libxml2-dev,
  libxslt1-dev,
