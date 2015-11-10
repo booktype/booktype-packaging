@@ -133,7 +133,9 @@ case "$1" in
 
           db_get booktype/redis-password
           REDIS_PASSWORD=$RET
+          if [ "${REDIS_PASSWORD}" != "None" ] ; then
           sed -i "s/REDIS_PASSWORD = None/REDIS_PASSWORD = ${REDIS_PASSWORD}/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
+          fi
 
           db_get booktype/time-zone
           TIME_ZONE=$RET
@@ -189,6 +191,10 @@ case "$1" in
           echo "*** Reloading the Apache web server ***"
           chown -R www-data:www-data ${DEFAULT_INSTANCE_DIR}
           service apache2 reload
+
+          echo "*** Reloading the supervisor ***"
+          supervisorctl reread
+          supervisorctl update
 
         else
           echo -e "\n Directory already exists in ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}!"
