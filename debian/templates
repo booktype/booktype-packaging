@@ -147,14 +147,14 @@ _Description: Redis password:
 
 Template: booktype/time-zone
 Type: string
-Default: Europe/Berlin     
+Default: Europe/London     
 _Description: Default instance time zone:
  Enter the time zone for your default Booktype instance.
  .
 
 Template: booktype/language-code    
 Type: string  
-Default: en-us
+Default: en-gb
 _Description: Default instance interface language:
  Enter the interface language code for your default Booktype instance.
  .
