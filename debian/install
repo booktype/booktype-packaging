@@ -1,6 +1,5 @@
 lib var/lib/booktype
 scripts var/lib/booktype
-debian/etc/supervisor/conf.d/booktype-instance1.conf etc/supervisor/conf.d
 debian/usr/share/man/man1 usr/share/man
 debian/usr/share/lintian/overrides/booktype usr/share/lintian/overrides
 debian/booktype-dependencies.pybundle var/lib/booktype
