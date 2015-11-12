@@ -94,7 +94,9 @@ case "$1" in
           db_get booktype/this-booktype-server
           THIS_BOOKTYPE_SERVER=$RET
           sed -i "s/THIS_BOOKTYPE_SERVER = ''/THIS_BOOKTYPE_SERVER = '${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
+          sed -i "s/THIS_BOOKTYPE_SERVER = ''/THIS_BOOKTYPE_SERVER = '${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
           sed -i "s/BOOKTYPE_URL = ''/BOOKTYPE_URL = 'http:\/\/${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
+          sed -i "s/BOOKTYPE_URL = ''/BOOKTYPE_URL = 'http:\/\/${THIS_BOOKTYPE_SERVER}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
 
           echo "*** Setting report email user ***"
 
@@ -201,8 +203,8 @@ case "$1" in
           cp ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/conf/supervisor.conf /etc/supervisor/conf.d/booktype-${DEFAULT_INSTANCE_NAME}.conf
 
           echo "*** Reloading the supervisor ***"
-          supervisorctl reread
-          supervisorctl update
+          service supervisor stop
+          service supervisor start
 
         else
           echo -e "\n Directory already exists in ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}!"
