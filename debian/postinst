@@ -71,7 +71,10 @@ case "$1" in
           DATABASE_PORT=$RET
           sed -i "s/'PORT': ''/'PORT': '${DATABASE_PORT}'/" ${DEFAULT_INSTANCE_SETTINGS}/prod.py
 
-          echo "*** Setting admin name and email ***"
+          echo "*** Setting admin password, name and email ***"
+
+          db_get booktype/admin-password
+          ADMIN_PASSWORD=$RET
 
           db_get booktype/admin-name
           ADMIN_NAME=$RET
@@ -152,6 +155,9 @@ case "$1" in
           echo "*** Setting default language code to ${LANGUAGE_CODE} ***"
           sed -i "s/LANGUAGE_CODE = 'en-us'/LANGUAGE_CODE = '${LANGUAGE_CODE}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
+          # stop debconf so daemons started by the install script cannot hold open the pipe
+          db_stop
+
           echo "*** Setting virtual path to ${VIRTUAL_ENV_DIR} ***"
           sed -i "s:VIRTUAL_PATH='':VIRTUAL_PATH='${VIRTUAL_ENV_DIR}':" ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/wsgi.py
 
@@ -190,6 +196,7 @@ case "$1" in
           cd ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
           ./manage.py syncdb --noinput
           ./manage.py migrate
+          ./manage.py createuser --is-superuser --username "admin" --password "${ADMIN_PASSWORD}" --fullname "${ADMIN_NAME}" --email "${ADMIN_EMAIL}"
           ./manage.py collectstatic --noinput
           ./manage.py compress
           ./manage.py update_permissions

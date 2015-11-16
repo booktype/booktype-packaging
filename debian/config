@@ -28,6 +28,8 @@ if [ "$RET" = "yes please" ]; then
         db_go ||true
         db_input high booktype/admin-email || true
         db_go ||true
+        db_input high booktype/admin-password || true
+        db_go ||true
 
         db_input high booktype/booktype-site-name || true
         db_go ||true

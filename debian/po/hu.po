@@ -1,21 +1,22 @@
 # Booktype installation questions for Debconf.
 # Copyright (C) 2014 Booktype contributors
 # This file is distributed under the same license as the Booktype package.
-# 
+#
 # Translators:
 # Zsolt Magyar <picizse@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
-"Report-Msgid-Bugs-To: contact@sourcefabric.org\n"
-"POT-Creation-Date: 2014-09-16 16:04+0100\n"
+"Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
+"POT-Creation-Date: 2015-11-16 17:56+0000\n"
 "PO-Revision-Date: 2015-07-13 16:52+0000\n"
 "Last-Translator: Zsolt Magyar <picizse@gmail.com>\n"
-"Language-Team: Hungarian (http://www.transifex.com/sourcefabric/booktype/language/hu/)\n"
+"Language-Team: Hungarian (http://www.transifex.com/sourcefabric/booktype/"
+"language/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: select
@@ -45,7 +46,9 @@ msgstr "A szerver automatikus beállítása:"
 msgid ""
 "This script can perform automatic configuration of a default instance, so "
 "that you can begin using Booktype directly after installation."
-msgstr "Ez a szkript automatikus végezhet konfigurációt, így azonnal elkezdheti használni Booktype-ot közvetlenül a telepítés után."
+msgstr ""
+"Ez a szkript automatikus végezhet konfigurációt, így azonnal elkezdheti "
+"használni Booktype-ot közvetlenül a telepítés után."
 
 #. Type: select
 #. Description
@@ -53,7 +56,10 @@ msgstr "Ez a szkript automatikus végezhet konfigurációt, így azonnal elkezdh
 msgid ""
 "Choose 'yes please' and the script will ask for details in order to set up "
 "the Booktype instance and create a virtual host configuration for Apache."
-msgstr "Válassza ki 'igen, kérjem\", és majd a szkript közben kérdezni fogja a részleteket, hogy miként hozza létre az új Booktype telepítést és hogyan készítsen egy virtuális gép konfigurációt Apache számára."
+msgstr ""
+"Válassza ki 'igen, kérjem\", és majd a szkript közben kérdezni fogja a "
+"részleteket, hogy miként hozza létre az új Booktype telepítést és hogyan "
+"készítsen egy virtuális gép konfigurációt Apache számára."
 
 #. Type: select
 #. Description
@@ -61,7 +67,9 @@ msgstr "Válassza ki 'igen, kérjem\", és majd a szkript közben kérdezni fogj
 msgid ""
 "If you choose 'no thanks', that's no problem. You're welcome to set it up "
 "however you like."
-msgstr "Ha a 'köszönöm, nem'-et választja, nem fog gondot okozni. Nyugodtan beállíthatja, ahogyan csak szeretné."
+msgstr ""
+"Ha a 'köszönöm, nem'-et választja, nem fog gondot okozni. Nyugodtan "
+"beállíthatja, ahogyan csak szeretné."
 
 #. Type: string
 #. Description
@@ -97,7 +105,8 @@ msgstr "A Booktype adatbázisának jelszava:"
 #. Description
 #: ../templates:4001
 msgid "Enter the password for the database which Booktype will use."
-msgstr "Adja meg az adatbázis jelszavát, amelyet majd a Booktype használni fog."
+msgstr ""
+"Adja meg az adatbázis jelszavát, amelyet majd a Booktype használni fog."
 
 #. Type: string
 #. Description
@@ -123,7 +132,9 @@ msgstr "Booktype adatbázis port:"
 msgid ""
 "Enter the port number that your database server uses. The default for "
 "PostgreSQL database servers is 5432."
-msgstr "Adja meg a port számot, amit az Ön adatbázis szervere használ. Az alapértelmezett a PostgreSQL adatbázis szerverek számára 5432."
+msgstr ""
+"Adja meg a port számot, amit az Ön adatbázis szervere használ. Az "
+"alapértelmezett a PostgreSQL adatbázis szerverek számára 5432."
 
 #. Type: string
 #. Default
@@ -144,7 +155,9 @@ msgstr "A Bookytype szerver adminisztrátorának neve:"
 msgid ""
 "Enter the name of the system administrator for your Booktype users to "
 "contact."
-msgstr "Adja meg a rendszer adminisztrátorának nevét, hogy kapcsolatba tudjanak jutni vele az Ön Booktype felhasználói."
+msgstr ""
+"Adja meg a rendszer adminisztrátorának nevét, hogy kapcsolatba tudjanak "
+"jutni vele az Ön Booktype felhasználói."
 
 #. Type: string
 #. Description
@@ -158,182 +171,212 @@ msgstr "Írja be a Booktype szerver adminisztátorának email címét:"
 msgid ""
 "Enter the email address of the system administrator for your Booktype users "
 "to contact."
-msgstr "írja be a rendszer adminisztrátor nevét az Ön Booktype felhasználói számára, hogy kapcsolatba tudjanak jutni Önnel."
+msgstr ""
+"írja be a rendszer adminisztrátor nevét az Ön Booktype felhasználói számára, "
+"hogy kapcsolatba tudjanak jutni Önnel."
+
+#. Type: password
+#. Description
+#: ../templates:9001
+#, fuzzy
+#| msgid "Name of the Booktype server administrator:"
+msgid "Web password for the Booktype server administrator:"
+msgstr "A Bookytype szerver adminisztrátorának neve:"
+
+#. Type: password
+#. Description
+#: ../templates:9001
+msgid ""
+"Enter a strong password for the adminstrator to use in the web interface of "
+"the default Booktype instance. This should not be the same as any other "
+"password."
+msgstr ""
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
-#: ../templates:9001
+#: ../templates:10001
 msgid "Booktype Site"
 msgstr "Booktype Honlap"
 
 #. Type: string
 #. Description
-#: ../templates:9002
+#: ../templates:10002
 msgid "Name of the default Booktype instance:"
 msgstr "Az alapértelmezett Booktype neve:"
 
 #. Type: string
 #. Description
-#: ../templates:9002
+#: ../templates:10002
 msgid ""
 "Enter the name of the default Booktype instance, which will be shown in the "
 "user interface template for that instance."
-msgstr "Írja be a nevét az alapértelmezett Booktype példánynak, amely majd sablonként meg fog jelenni a felhasználói felületen."
+msgstr ""
+"Írja be a nevét az alapértelmezett Booktype példánynak, amely majd "
+"sablonként meg fog jelenni a felhasználói felületen."
 
 #. Type: string
 #. Description
-#: ../templates:10001
+#: ../templates:11001
 msgid "Domain name of the default Booktype instance:"
 msgstr "Az alapértelmezett Booktype domén neve:"
 
 #. Type: string
 #. Description
-#: ../templates:10001
+#: ../templates:11001
 msgid ""
 "Enter the domain name of the default Booktype instance. The DNS record for "
 "this domain name must resolve to the Apache server running on this machine, "
 "for example:"
-msgstr "Adja meg az alapértelmezett domén nevet az alapértelmezett Booktype sablonhoz. A DNS-rekordot a domén névhez úgy kell megoldania, hogy az Apache szerver ezen a gépen fusson, mint például:"
+msgstr ""
+"Adja meg az alapértelmezett domén nevet az alapértelmezett Booktype "
+"sablonhoz. A DNS-rekordot a domén névhez úgy kell megoldania, hogy az Apache "
+"szerver ezen a gépen fusson, mint például:"
 
 #. Type: string
 #. Description
-#: ../templates:10001
+#: ../templates:11001
 msgid "booktype.example.com"
 msgstr "booktype.valamipeldaul.com"
 
 #. Type: string
 #. Description
-#: ../templates:11001
+#: ../templates:12001
 msgid "Report email user:"
 msgstr "Felhasználói email jelentés:"
 
 #. Type: string
 #. Description
-#: ../templates:11001
+#: ../templates:12001
 msgid ""
-"Enter the 'From' address for Booktype to use when sending management "
-"reports."
+"Enter the 'From' address for Booktype to use when sending management reports."
 msgstr "Adja meg, hogy 'kitől' kapja a felhasználói jelentést."
 
 #. Type: string
 #. Description
-#: ../templates:12001
+#: ../templates:13001
 msgid "Email host:"
 msgstr "Email hoszt:"
 
 #. Type: string
 #. Description
-#: ../templates:12001
+#: ../templates:13001
 msgid "Enter the mail server for Booktype to use when sending email."
 msgstr "Adja meg a levelező szervert a Booktype számára a levélküldéshez."
 
 #. Type: string
 #. Description
-#: ../templates:13001
+#: ../templates:14001
 msgid "Email port:"
 msgstr "Email port:"
 
 #. Type: string
 #. Description
-#: ../templates:13001
+#: ../templates:14001
 msgid "Enter the SMTP port for Booktype to use when sending email."
 msgstr "Adja meg az SMTP portot, amit e-mail kűldéshez szeretne használni."
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
-#: ../templates:14001
+#: ../templates:15001
 msgid "Unknown"
 msgstr "Ismeretlen"
 
 #. Type: string
 #. Description
-#: ../templates:14002
+#: ../templates:15002
 msgid "Default publisher:"
 msgstr "Alapértelmezett kiadó:"
 
 #. Type: string
 #. Description
-#: ../templates:14002
+#: ../templates:15002
 msgid "Enter the name of the default publisher for new books."
 msgstr "Adja meg az új könyvek alapértelmezett kiadójának nevét."
 
 #. Type: string
 #. Description
-#: ../templates:15001
+#: ../templates:16001
 msgid "Redis host:"
 msgstr "Redis hoszt:"
 
 #. Type: string
 #. Description
-#: ../templates:15001
+#: ../templates:16001
 msgid ""
-"Enter the Redis server hostname. For a typical installation, you can use the"
-" default of 'localhost'."
-msgstr "Írja be a Redis szerver hosztnevét. Szokásos telepítés esetén megadhatja az alapértelmezett a \"localhost\"-ot is."
+"Enter the Redis server hostname. For a typical installation, you can use the "
+"default of 'localhost'."
+msgstr ""
+"Írja be a Redis szerver hosztnevét. Szokásos telepítés esetén megadhatja az "
+"alapértelmezett a \"localhost\"-ot is."
 
 #. Type: string
 #. Description
-#: ../templates:16001
+#: ../templates:17001
 msgid "Redis port:"
 msgstr "Redis port:"
 
 #. Type: string
 #. Description
-#: ../templates:16001
+#: ../templates:17001
 msgid ""
 "Enter the port number that your Redis server uses. The default port is 6379."
-msgstr "Adja meg a port számot, amit az Ön Redis szervere használt. Az alapértelmezett port 6379."
+msgstr ""
+"Adja meg a port számot, amit az Ön Redis szervere használt. Az "
+"alapértelmezett port 6379."
 
 #. Type: string
 #. Description
-#: ../templates:17001
+#: ../templates:18001
 msgid "Redis database number:"
 msgstr "Redis adatbázisának száma:"
 
 #. Type: string
 #. Description
-#: ../templates:17001
+#: ../templates:18001
 msgid ""
 "Enter the number of the Redis database. If you only have one application "
 "using the Redis server, this value can be the default of zero."
-msgstr "Írja be a Redis adatbázis számát. Ha csak egy alkalmazás segítségével fut a Redis szerver, ez az érték lehet az alapértelmezett nulla is."
+msgstr ""
+"Írja be a Redis adatbázis számát. Ha csak egy alkalmazás segítségével fut a "
+"Redis szerver, ez az érték lehet az alapértelmezett nulla is."
 
 #. Type: password
 #. Description
-#: ../templates:18001
+#: ../templates:19001
 msgid "Redis password:"
 msgstr "Redis jelszó:"
 
 #. Type: password
 #. Description
-#: ../templates:18001
+#: ../templates:19001
 msgid ""
-"Enter the Redis password, if your server requires one. The default is "
+"Enter the Redis password, if your server requires one. The default is 'None'."
+msgstr ""
+"Írja be a Redis jelszót, ha a szerver megköveteli. Az alapértelmezett a "
 "'None'."
-msgstr "Írja be a Redis jelszót, ha a szerver megköveteli. Az alapértelmezett a 'None'."
 
 #. Type: string
 #. Description
-#: ../templates:19001
+#: ../templates:20001
 msgid "Default instance time zone:"
 msgstr "Alapértelmezett időzóna:"
 
 #. Type: string
 #. Description
-#: ../templates:19001
+#: ../templates:20001
 msgid "Enter the time zone for your default Booktype instance."
 msgstr "Adja meg az időzónát az Ön alapértelmezett Booktype telepítéséhez."
 
 #. Type: string
 #. Description
-#: ../templates:20001
+#: ../templates:21001
 msgid "Default instance interface language:"
 msgstr "Az felület alapértelmezett nyelve:"
 
 #. Type: string
 #. Description
-#: ../templates:20001
+#: ../templates:21001
 msgid "Enter the interface language code for your default Booktype instance."
 msgstr "Adja meg az alapértelmezett nyelv kódját az Ön Booktype sablonjához."
