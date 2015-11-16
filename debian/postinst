@@ -199,12 +199,14 @@ case "$1" in
           chown -R www-data:www-data ${DEFAULT_INSTANCE_DIR}
           service apache2 reload
 
+          echo "*** Stopping the supervisor ***"
+          service supervisor stop
+
           echo "*** Copying the supervisor configuration ***"
           cp ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/conf/supervisor.conf /etc/supervisor/conf.d/booktype-${DEFAULT_INSTANCE_NAME}.conf
 
-          echo "*** Reloading the supervisor ***"
-          service supervisor stop
-          service supervisor start
+          echo "*** Restarting the supervisor ***"
+          service supervisor start || true
 
         else
           echo -e "\n Directory already exists in ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}!"
