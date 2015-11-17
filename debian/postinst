@@ -192,6 +192,9 @@ case "$1" in
 
           fi
 
+          echo "*** Stopping the supervisor ***"
+          service supervisor stop
+
           echo "*** Finishing default instance creation ***"
           cd ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
           ./manage.py syncdb --noinput
@@ -201,20 +204,17 @@ case "$1" in
           ./manage.py update_permissions
           ./manage.py update_default_roles
 
-          echo "*** Reloading the Apache web server ***"
+          echo "*** Reloading the web server configuration ***"
           chown -R www-data:www-data ${DEFAULT_INSTANCE_DIR}
           service apache2 reload
-
-          echo "*** Stopping the supervisor ***"
-          service supervisor stop
 
           echo "*** Copying the supervisor configuration ***"
           cp ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/conf/supervisor.conf /etc/supervisor/conf.d/booktype-${DEFAULT_INSTANCE_NAME}.conf
 
           echo "*** Restarting the supervisor ***"
-          service supervisor start || true
+          service supervisor start &
 
-          echo "*** Creating the superuser account ***"
+          echo -e "\n *** Creating the superuser account ***"
           ./manage.py createuser --is-superuser --username "admin" --password "${ADMIN_PASSWORD}" --fullname "${ADMIN_NAME}" --email "${ADMIN_EMAIL}" || true
 
         else
