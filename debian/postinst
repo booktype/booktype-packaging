@@ -196,7 +196,6 @@ case "$1" in
           cd ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
           ./manage.py syncdb --noinput
           ./manage.py migrate
-          ./manage.py createuser --is-superuser --username "admin" --password "${ADMIN_PASSWORD}" --fullname "${ADMIN_NAME}" --email "${ADMIN_EMAIL}"
           ./manage.py collectstatic --noinput
           ./manage.py compress
           ./manage.py update_permissions
@@ -214,6 +213,9 @@ case "$1" in
 
           echo "*** Restarting the supervisor ***"
           service supervisor start || true
+
+          echo "*** Creating the superuser account ***"
+          ./manage.py createuser --is-superuser --username "admin" --password "${ADMIN_PASSWORD}" --fullname "${ADMIN_NAME}" --email "${ADMIN_EMAIL}" || true
 
         else
           echo -e "\n Directory already exists in ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}!"
