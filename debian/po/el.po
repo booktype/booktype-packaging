@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the Booktype package.
 #
 # Translators:
-# Felipe Thomaz Pedroni, 2014
+# anvo <fragos.george@hotmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
 "POT-Creation-Date: 2015-11-16 17:56+0000\n"
-"PO-Revision-Date: 2014-12-16 11:52+0000\n"
-"Last-Translator: Felipe Thomaz Pedroni\n"
-"Language-Team: Portuguese (http://www.transifex.com/sourcefabric/booktype/"
-"language/pt/)\n"
-"Language: pt\n"
+"PO-Revision-Date: 2015-02-22 23:00+0000\n"
+"Last-Translator: anvo <fragos.george@hotmail.com>\n"
+"Language-Team: Greek (http://www.transifex.com/sourcefabric/booktype/"
+"language/el/)\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,19 +26,19 @@ msgstr ""
 #. Translators: please translate this default value
 #: ../templates:1001 ../templates:1002
 msgid "yes please"
-msgstr "Sim, por favor"
+msgstr "Ναι, παρακαλώ"
 
 #. Type: select
 #. Choices
 #: ../templates:1001
 msgid "no thanks"
-msgstr "Não, obrigado"
+msgstr "Όχι, ευχαριστώ"
 
 #. Type: select
 #. Description
 #: ../templates:1003
 msgid "Set up server automatically:"
-msgstr "Configurar servidor automaticamente:"
+msgstr "Αυτόματη ρύθμιση διακομηστή:"
 
 #. Type: select
 #. Description
@@ -47,8 +47,9 @@ msgid ""
 "This script can perform automatic configuration of a default instance, so "
 "that you can begin using Booktype directly after installation."
 msgstr ""
-"Este script pode realizar a configuração automática de uma instância padrão, "
-"de modo que você pode começar a usar Booktype diretamente após a instalação."
+"Το σενάριο αυτό μπορεί να προβεί σε μια αυτόματη ρύθμιση της αρχικής "
+"εγκατάστασης ώστε να μπορέσετε να χρησιμοποιήσετε το Booktype αμέσως μετά "
+"την εγκατάστασή του."
 
 #. Type: select
 #. Description
@@ -57,8 +58,9 @@ msgid ""
 "Choose 'yes please' and the script will ask for details in order to set up "
 "the Booktype instance and create a virtual host configuration for Apache."
 msgstr ""
-"Escolha 'sim, por favor' e o script pedirá detalhes para configurar a "
-"instância do Booktype e criar uma configuração de host virtual para o Apache."
+"Επιλέξτε «Ναι, παρακαλώ» και το σενάριο θα σας ζητήσει λεπτομέρειες για την "
+"εγκατάσταση του Booktype και θα δημιουργήσει αρχείο ρυθμίσεων του εικονικού "
+"φιλοξενητή για Apache."
 
 #. Type: select
 #. Description
@@ -67,62 +69,66 @@ msgid ""
 "If you choose 'no thanks', that's no problem. You're welcome to set it up "
 "however you like."
 msgstr ""
-"Se você escolher 'não, obrigado', não há problema. Você é bem-vindo para "
-"configurá-lo da maneira que quiser."
+"Αν επιλέξετε «Όχι, ευχαριστώ», κανένα πρόβλημα. Είστε ευπρόσδεκτοι να το "
+"ρυθμίσετε όπως επιθυμείτε."
 
 #. Type: string
 #. Description
 #: ../templates:2001
 msgid "Name of the Booktype database:"
-msgstr "Nome do banco de dados do Booktype:"
+msgstr "Όνομα της βάσης δεδομένων για το Booktype:"
 
 #. Type: string
 #. Description
 #: ../templates:2001
 msgid "Enter the name of the database for Booktype to use."
-msgstr "Digite o nome do banco de dados para o Booktype usar."
+msgstr "Εισάγετε το όνομα της βάσης δεδομένων που θα χρησιμοποιεί το Booktype."
 
 #. Type: string
 #. Description
 #: ../templates:3001
 msgid "Booktype database owner username:"
-msgstr "Nome do proprietário do banco de dados do Booktype:"
+msgstr "Όνομα χρήστη του ιδιοκτήτη της βάσης δεδομένων Booktype:"
 
 #. Type: string
 #. Description
 #: ../templates:3001
 msgid "Enter the username of the Booktype database owner."
-msgstr "Digite o nome do proprietário do banco de dados do Booktype."
+msgstr ""
+"Εισάγετε το όνομα χρήστη για τον ιδιοκτήτη της βάσης δεδομένων του Booktype. "
 
 #. Type: password
 #. Description
 #: ../templates:4001
 msgid "Password for the Booktype database:"
-msgstr "Senha para o banco de dados do Booktype:"
+msgstr "Κωδικός για την βάση δεδομένων Booktype:"
 
 #. Type: password
 #. Description
 #: ../templates:4001
 msgid "Enter the password for the database which Booktype will use."
-msgstr "Digite a senha para o banco de dados que o Booktype usará."
+msgstr ""
+"Εισάγετε τον κωδικό για την βάση δεδομένων που θα χρησιμοποιεί το Booktype."
 
 #. Type: string
 #. Description
 #: ../templates:5001
 msgid "Booktype database host:"
-msgstr "Host do banco de dados do Booktype"
+msgstr "Ο υπολογιστής που θα φιλοξενεί την βάση δεδομένων Booktype:"
 
 #. Type: string
 #. Description
 #: ../templates:5001
 msgid "Enter the hostname of the machine serving the Booktype database."
-msgstr "Digite o nome da máquina em que o banco de dados do Booktype executa."
+msgstr ""
+"Εισάγετε το όνομα υπολογιστή (hostname) της συσκευής που θα παρέχει την βάση "
+"δεδομένων για το Booktype."
 
 #. Type: string
 #. Description
 #: ../templates:6001
 msgid "Booktype database port:"
-msgstr "Porta do banco de dados do Booktype:"
+msgstr "Θύρα βάσης δεδομένων Booktype:"
 
 #. Type: string
 #. Description
@@ -131,21 +137,22 @@ msgid ""
 "Enter the port number that your database server uses. The default for "
 "PostgreSQL database servers is 5432."
 msgstr ""
-"Digite o número da porta que seu servidor de banco de dados usa. O padrão "
-"para servidores de banco de dados PostgreSQL é 5432."
+"Εισάγετε τον αριθμό της θύρας που χρησιμοποιεί ο διακομιστής σας βάσης "
+"δεδομένων. Ο αρχικός αριθμός θύρας για τις βάσεις δεδομένων PostgreSQL είναι "
+"5432."
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:7001
 msgid "Booktype Administrator"
-msgstr "Administrador do Booktype"
+msgstr "Διαχειριστής του Booktype"
 
 #. Type: string
 #. Description
 #: ../templates:7002
 msgid "Name of the Booktype server administrator:"
-msgstr "Nome do administrador do servidor do Booktype:"
+msgstr "Το όνομα του διαχειριστή διακομιστή Booktype:"
 
 #. Type: string
 #. Description
@@ -154,14 +161,14 @@ msgid ""
 "Enter the name of the system administrator for your Booktype users to "
 "contact."
 msgstr ""
-"Digite o nome do administrador do sistema para que seus usuários do BookType "
-"possam entrar em contato."
+"Εισάγετε το όνομα του διαχειριστή συστήματος με τον οποίο θα επικοινωνούν οι "
+"χρήστες του Booktype."
 
 #. Type: string
 #. Description
 #: ../templates:8001
 msgid "Email address of the Booktype server administrator:"
-msgstr "Endereço de e-mail do administrador do servidor do Booktype:"
+msgstr "Η ηλ. διεύθυνση του διαχειριστή διακομιστή Booktype:"
 
 #. Type: string
 #. Description
@@ -170,8 +177,8 @@ msgid ""
 "Enter the email address of the system administrator for your Booktype users "
 "to contact."
 msgstr ""
-"Digite o endereço de e-mail do administrador do sistema para seus usuários "
-"BookType possam entrar em contato."
+"Εισάγετε την ηλ. διεύθυνση για τον διαχειριστή του συστήματος που θα "
+"χρησιμοποιούν οι χρήστες του Booktype."
 
 #. Type: password
 #. Description
@@ -179,7 +186,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Name of the Booktype server administrator:"
 msgid "Web password for the Booktype server administrator:"
-msgstr "Nome do administrador do servidor do Booktype:"
+msgstr "Το όνομα του διαχειριστή διακομιστή Booktype:"
 
 #. Type: password
 #. Description
@@ -195,13 +202,13 @@ msgstr ""
 #. Translators: please translate this default value
 #: ../templates:10001
 msgid "Booktype Site"
-msgstr "Site do Booktype"
+msgstr "Όνομα ιστοτόπου Booktype"
 
 #. Type: string
 #. Description
 #: ../templates:10002
 msgid "Name of the default Booktype instance:"
-msgstr "Nome da instância padrão do Booktype:"
+msgstr "Το όνομα της αρχικής εγκατάστασης Booktype:"
 
 #. Type: string
 #. Description
@@ -210,14 +217,14 @@ msgid ""
 "Enter the name of the default Booktype instance, which will be shown in the "
 "user interface template for that instance."
 msgstr ""
-"Digite o nome da instância padrão do Booktype, o qual será mostrado no "
-"modelo de interface de usuário."
+"Εισάγετε το όνομα της αρχικής εγκατάστασης του Booktype, το οποίο θα "
+"εμφανίζεται στο πρότυπο του περιβάλλοντος εργασίας για την εγκατάσταση αυτή."
 
 #. Type: string
 #. Description
 #: ../templates:11001
 msgid "Domain name of the default Booktype instance:"
-msgstr "Nome de domínio da instância padrão do Booktype:"
+msgstr "Όνομα περιοχής (domain) της αρχικής εγκατάστασης του Booktype:"
 
 #. Type: string
 #. Description
@@ -227,21 +234,21 @@ msgid ""
 "this domain name must resolve to the Apache server running on this machine, "
 "for example:"
 msgstr ""
-"Digite o nome do domínio da instância padão do Booktype. O registro de DNS "
-"para este domínio deve resolver para o servidor Apache rodando nesta "
-"máquina, por exemplo:"
+"Εισάγετε το όνομα περιοχής (domain) της αρχικής εγκατάστασης του Booktype. Η "
+"εγγραφή DNS αυτού του ονόματος περιοχής πρέπει να οδηγεί στον διακομιστή "
+"Apache ο οποίος εκτελείτε σε αυτόν τον υπολογιστή. Για παράδειγμα:"
 
 #. Type: string
 #. Description
 #: ../templates:11001
 msgid "booktype.example.com"
-msgstr "booktype.exemplo.com.br"
+msgstr "booktype.example.com"
 
 #. Type: string
 #. Description
 #: ../templates:12001
 msgid "Report email user:"
-msgstr "E-mail para relatório:"
+msgstr "Διεύθυνση ηλ. ταχυδρομείου του παραλήπτη αναφορών:"
 
 #. Type: string
 #. Description
@@ -249,56 +256,61 @@ msgstr "E-mail para relatório:"
 msgid ""
 "Enter the 'From' address for Booktype to use when sending management reports."
 msgstr ""
-"Digite o endereço de 'Origem' do Booktype quando enviar relatórios de gestão."
+"Εισάγετε την ηλ. διεύθυνση «Από» την οποία θα χρησιμοποιεί το Booktype για "
+"να αποστείλει διαχειριστικές αναφορές."
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Email host:"
-msgstr "Host do e-mail:"
+msgstr "Διακομιστής ηλ. αλληλογραφίας:"
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Enter the mail server for Booktype to use when sending email."
-msgstr "Digite o servidor de e-mail para Booktype usar."
+msgstr ""
+"Εισάγετε τον διακομιστή αλληλογραφίας τον οποίο θα χρησιμοποιεί το Booktype "
+"για να στέλνει ηλ. μηνύματα."
 
 #. Type: string
 #. Description
 #: ../templates:14001
 msgid "Email port:"
-msgstr "Port do e-mail"
+msgstr "Θύρα ελ. αλληλογραφίας:"
 
 #. Type: string
 #. Description
 #: ../templates:14001
 msgid "Enter the SMTP port for Booktype to use when sending email."
-msgstr "Digite a porta SMTP para Booktype usar quando enviar e-mail."
+msgstr ""
+"Εισάγετε την θύρα SMPT που θα χρησιμοποιεί το Booktype για να στέλνει ηλ. "
+"μηνύματα."
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:15001
 msgid "Unknown"
-msgstr "Desconhecido"
+msgstr "Άγνωστος/η/ο"
 
 #. Type: string
 #. Description
 #: ../templates:15002
 msgid "Default publisher:"
-msgstr "Editor padrão"
+msgstr "Αρχικός εκδότης:"
 
 #. Type: string
 #. Description
 #: ../templates:15002
 msgid "Enter the name of the default publisher for new books."
-msgstr "Digite o nome do editor padrão para novos livros."
+msgstr "Εισάγετε το όνομα του αρχικού εκδότη για τα νέα βιβλία."
 
 #. Type: string
 #. Description
 #: ../templates:16001
 msgid "Redis host:"
-msgstr "Host Redis:"
+msgstr "Διακομιστής Redis:"
 
 #. Type: string
 #. Description
@@ -307,14 +319,14 @@ msgid ""
 "Enter the Redis server hostname. For a typical installation, you can use the "
 "default of 'localhost'."
 msgstr ""
-"Digite o nome do servidor Redis. Para uma instalação típica, você pode usar "
-"o padrão 'localhost'."
+"Εισάγετε το όνομα του διακομιστή Redis. Σε τυπικές εγκαταστάσεις, "
+"χρησιμοποιείται το αρχικό όνομα «localhost»."
 
 #. Type: string
 #. Description
 #: ../templates:17001
 msgid "Redis port:"
-msgstr "Porta Redis:"
+msgstr "Θύρα Redis:"
 
 #. Type: string
 #. Description
@@ -322,13 +334,14 @@ msgstr "Porta Redis:"
 msgid ""
 "Enter the port number that your Redis server uses. The default port is 6379."
 msgstr ""
-"Digite o número da porta que o seu servidor Redis usa. A porta padrão é 6379."
+"Εισάγετε τον αριθμό της θύρας που χρησιμοποιεί ο διακομιστής Redis. Η αρχική "
+"θύρα είναι 6379."
 
 #. Type: string
 #. Description
 #: ../templates:18001
 msgid "Redis database number:"
-msgstr "Número do banco de dados Redis:"
+msgstr "Αριθμός βάσης δεδομένων Redis:"
 
 #. Type: string
 #. Description
@@ -337,43 +350,46 @@ msgid ""
 "Enter the number of the Redis database. If you only have one application "
 "using the Redis server, this value can be the default of zero."
 msgstr ""
-"Digite o número do banco de dados Redis. Se você só tem uma aplicação "
-"utilizando o servidor Redis, esse valor pode ser o padrão zero."
+"Εισάγετε τον αριθμό της βάσης δεδομένων Redis. Αν έχετε μόνον μια εφαρμογή "
+"που χρησιμοποιεί τον διακομιστή Redis, η τιμή αυτή είναι η αρχική «0»."
 
 #. Type: password
 #. Description
 #: ../templates:19001
 msgid "Redis password:"
-msgstr "Senha Redis:"
+msgstr "Κωδικός Redis:"
 
 #. Type: password
 #. Description
 #: ../templates:19001
 msgid ""
 "Enter the Redis password, if your server requires one. The default is 'None'."
-msgstr "Digite a senha Redis, se o servidor requer um. O padrão é 'Nenhum'."
+msgstr ""
+"Εισάγετε τον κωδικό Redis, αν το απαιτεί ο διακομιστής σας. Ο αρχικός "
+"κωδικός είναι «None»."
 
 #. Type: string
 #. Description
 #: ../templates:20001
 msgid "Default instance time zone:"
-msgstr "Fuso horário padrão da instância:"
+msgstr "Ζώνη ώρας αρχικής εγκατάστασης:"
 
 #. Type: string
 #. Description
 #: ../templates:20001
 msgid "Enter the time zone for your default Booktype instance."
-msgstr "Digite o fuso horário de sua instância padrão do Booktype."
+msgstr "Εισάγετε την ζώνη ώρας για την αρχική εγκατάσταση Booktype."
 
 #. Type: string
 #. Description
 #: ../templates:21001
 msgid "Default instance interface language:"
-msgstr "Linguagem para a instância padrão:"
+msgstr "Γλώσσα περιβάλλοντος χρήστη για την αρχική εγκατάσταση:"
 
 #. Type: string
 #. Description
 #: ../templates:21001
 msgid "Enter the interface language code for your default Booktype instance."
 msgstr ""
-"Digite o código do idioma da interface para sua instância padrão do Booktype."
+"Εισάγετε τον κώδικα της γλώσσας της διεπαφής για την αρχική εγκατάσταση "
+"Booktype."

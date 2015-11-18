@@ -16,21 +16,18 @@ _Description: Set up server automatically:
 
 Template: booktype/database-name
 Type: string
-Default: 
 _Description: Name of the Booktype database:
  Enter the name of the database for Booktype to use.
  .
 
 Template: booktype/database-user
-Type: string
-Default:                       
+Type: string                   
 _Description: Booktype database owner username:
  Enter the username of the Booktype database owner.
  .
 
 Template: booktype/database-password
-Type: password
-Default:             
+Type: password       
 _Description: Password for the Booktype database:
  Enter the password for the database which Booktype will use.
  .
@@ -66,6 +63,13 @@ _Description: Email address of the Booktype server administrator:
  contact.
  .
 
+Template: booktype/admin-password
+Type: password
+_Description: Web password for the Booktype server administrator:
+ Enter a strong password for the adminstrator to use in the web interface of the
+ default Booktype instance. This should not be the same as any other password.
+ .
+
 Template: booktype/booktype-site-name 
 Type: string
 # Translators: please translate this default value
@@ -77,7 +81,6 @@ _Description: Name of the default Booktype instance:
 
 Template: booktype/this-booktype-server
 Type: string
-Default: 
 _Description: Domain name of the default Booktype instance:
  Enter the domain name of the default Booktype instance. The DNS record for
  this domain name must resolve to the Apache server running on this machine,
@@ -88,7 +91,6 @@ _Description: Domain name of the default Booktype instance:
 
 Template: booktype/report-email-user
 Type: string
-Default: 
 _Description: Report email user:
  Enter the 'From' address for Booktype to use when sending management reports.
  .
@@ -147,14 +149,14 @@ _Description: Redis password:
 
 Template: booktype/time-zone
 Type: string
-Default: Europe/Berlin     
+Default: Europe/London     
 _Description: Default instance time zone:
  Enter the time zone for your default Booktype instance.
  .
 
 Template: booktype/language-code    
 Type: string  
-Default: en-us
+Default: en-gb
 _Description: Default instance interface language:
  Enter the interface language code for your default Booktype instance.
  .
