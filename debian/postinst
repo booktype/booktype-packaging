@@ -186,9 +186,12 @@ case "$1" in
             LOCALE_CODE=$(echo ${LANGUAGE_CODE} | sed 's/-../\U&/' | sed 's/-/_/')
             sed -i "s/en_GB.UTF-8/${LOCALE_CODE}.UTF-8/" ${APACHE_TEMPLATE}
 
-            echo "*** Enabling the Apache virtual server ***"
+            echo "*** Enabling the Apache virtual server for Booktype ***"
             cp ${APACHE_TEMPLATE} /etc/apache2/sites-available/booktype-${DEFAULT_INSTANCE_NAME}.conf
-            a2ensite booktype-${DEFAULT_INSTANCE_NAME}.conf
+            a2ensite booktype-${DEFAULT_INSTANCE_NAME}
+
+            echo "*** Disabling the 'It works!' page of Apache ***"
+            a2dissite 000-default
 
           fi
 
