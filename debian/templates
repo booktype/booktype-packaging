@@ -1,7 +1,6 @@
 Template: booktype/server-setup
 Type: select
 __Choices: yes please, no thanks
-# Translators: please translate this default value
 _Default: yes please
 _Description: Set up server automatically:
  This script can perform automatic configuration of a default instance, so that
