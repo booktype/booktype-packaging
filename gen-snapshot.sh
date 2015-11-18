@@ -29,7 +29,6 @@ cd ${BUILDDEST} || exit
 # moved to debian/copyright
 rm LICENSE.txt
 rm lib/booktype/apps/edit/static/edit/js/aloha/plugins/common/align/LICENSE
-rm lib/booktype/apps/edit/static/edit/js/aloha/plugins/extra/flag-icons/img/flags/LICENSE
 
 # fix permissions
 chmod +x scripts/cron_reports.sh.original
