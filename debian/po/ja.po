@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the Booktype package.
 # 
 # Translators:
-# Besnik <besnik@programeshqip.org>, 2015
+# Hiroyuki.Anraku <anrakuh@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
 "POT-Creation-Date: 2015-11-16 17:56+0000\n"
-"PO-Revision-Date: 2015-11-19 10:27+0000\n"
-"Last-Translator: Besnik <besnik@programeshqip.org>\n"
-"Language-Team: Albanian (http://www.transifex.com/sourcefabric/booktype/language/sq/)\n"
+"PO-Revision-Date: 2015-12-09 17:15+0000\n"
+"Last-Translator: Hiroyuki.Anraku <anrakuh@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/sourcefabric/booktype/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sq\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Type: select
 #. Choices
@@ -25,19 +25,19 @@ msgstr ""
 #. Translators: please translate this default value
 #: ../templates:1001 ../templates:1002
 msgid "yes please"
-msgstr "po, ju lutem"
+msgstr "はい、お願いします"
 
 #. Type: select
 #. Choices
 #: ../templates:1001
 msgid "no thanks"
-msgstr "jo, faleminderit"
+msgstr "いいえ、結構です"
 
 #. Type: select
 #. Description
 #: ../templates:1003
 msgid "Set up server automatically:"
-msgstr "Rregulloje vetvetiu shërbyesin:"
+msgstr "自動でサーバをセットアップ"
 
 #. Type: select
 #. Description
@@ -45,7 +45,7 @@ msgstr "Rregulloje vetvetiu shërbyesin:"
 msgid ""
 "This script can perform automatic configuration of a default instance, so "
 "that you can begin using Booktype directly after installation."
-msgstr "Ky programth mund të kryejë formësim të vetvetishëm të një instance parazgjedhje, që kështu të mund të filloni të përdorni Booktype-in fill pas instalimit."
+msgstr "あなたがインストールの後にBooktype を使い始めることができるように、このスクリプトはデフォルトの値による自動的な設定を行なうことができます。"
 
 #. Type: select
 #. Description
@@ -53,7 +53,7 @@ msgstr "Ky programth mund të kryejë formësim të vetvetishëm të një instan
 msgid ""
 "Choose 'yes please' and the script will ask for details in order to set up "
 "the Booktype instance and create a virtual host configuration for Apache."
-msgstr "Zgjidhni 'po, ju lutem' dhe programthi do të kërkojë hollësi me qëllim rregullimin e instancës së Booktype-it dhe krijimin e një formësimi strehe virtuale për Apache-in."
+msgstr "「はい、お願いします」を選択すると、BooktypeとApacheの仮想ホストの設定をするための詳細を質問します。"
 
 #. Type: select
 #. Description
@@ -61,61 +61,61 @@ msgstr "Zgjidhni 'po, ju lutem' dhe programthi do të kërkojë hollësi me qël
 msgid ""
 "If you choose 'no thanks', that's no problem. You're welcome to set it up "
 "however you like."
-msgstr "Nëse zgjidhni 'jo, faleminderit', s’ka problem. Jeni i mirëpritur ta rregulloni kurdo që të dëshironi."
+msgstr "もし、「いいえ、結構です」を選択したとしても、問題ありません。あなたの好むやり方で設定を行うことが出来ます。"
 
 #. Type: string
 #. Description
 #: ../templates:2001
 msgid "Name of the Booktype database:"
-msgstr "Emër baze të dhënash Booktype:"
+msgstr "Booktypeデータベースの名前"
 
 #. Type: string
 #. Description
 #: ../templates:2001
 msgid "Enter the name of the database for Booktype to use."
-msgstr "Jepni emrin e bazës së të dhënave për përdorim nga Booktype-i. "
+msgstr "Booktypeが利用するデータベースの名前を入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:3001
 msgid "Booktype database owner username:"
-msgstr "Emër përdoruesi i të zotit të bazës së të dhënave Booktype:"
+msgstr "Booktypeデータベースのオーナーのユーザ名"
 
 #. Type: string
 #. Description
 #: ../templates:3001
 msgid "Enter the username of the Booktype database owner."
-msgstr "Jepni emrin e përdoruesit të të zotit të bazës së të dhënave Booktype:"
+msgstr "Booktypeが利用するデータベースのオーナーのユーザ名を入力してください。"
 
 #. Type: password
 #. Description
 #: ../templates:4001
 msgid "Password for the Booktype database:"
-msgstr "Fjalëkalim për bazën e të dhënave Booktype:"
+msgstr "Booktypeデータベースのパスワード"
 
 #. Type: password
 #. Description
 #: ../templates:4001
 msgid "Enter the password for the database which Booktype will use."
-msgstr "Jepni fjalëkalimin për te baza e të dhënave të cilën do të përdorë Booktype-i:"
+msgstr "Booktypeが利用するデータベースのパスワードを入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:5001
 msgid "Booktype database host:"
-msgstr "Strehë baze të dhënash Booktype:"
+msgstr "Booktypeデータベースのホスト名"
 
 #. Type: string
 #. Description
 #: ../templates:5001
 msgid "Enter the hostname of the machine serving the Booktype database."
-msgstr "Jepni emërstrehën e makinës që shërben bazën e të dhënave Booktype."
+msgstr "Booktypeデータベースが動くサーバのホスト名を入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:6001
 msgid "Booktype database port:"
-msgstr "Portë baze të dhënash Booktype:"
+msgstr "Booktypeデータベースのport"
 
 #. Type: string
 #. Description
@@ -123,20 +123,20 @@ msgstr "Portë baze të dhënash Booktype:"
 msgid ""
 "Enter the port number that your database server uses. The default for "
 "PostgreSQL database servers is 5432."
-msgstr "Jepni numrin e portës që përdor shërbyesi juaj i bazës së të dhënave. Për shërbyes bazash të dhënash PostgreSQL parazgjedhja është 5432."
+msgstr "データベースサーバが利用するport番号を入力してください。PostgreSQLデータベースのデフォルトのport番号は5432です。"
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:7001
 msgid "Booktype Administrator"
-msgstr "Administrues Booktype-i"
+msgstr "Booktype管理者"
 
 #. Type: string
 #. Description
 #: ../templates:7002
 msgid "Name of the Booktype server administrator:"
-msgstr "Emër përgjegjësi shërbyesi Booktype:"
+msgstr "Booktypeサーバの管理者の名前"
 
 #. Type: string
 #. Description
@@ -144,13 +144,13 @@ msgstr "Emër përgjegjësi shërbyesi Booktype:"
 msgid ""
 "Enter the name of the system administrator for your Booktype users to "
 "contact."
-msgstr "Jepni emrin e përgjegjësit të sistemit me të cilin do të duhej të lidheshin përdoruesit e Booktype-it tuaj."
+msgstr "このBooktype利用者がコンタクトをとるためのシステム管理者の名前を入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:8001
 msgid "Email address of the Booktype server administrator:"
-msgstr "Adresë email e përgjegjësit të shërbyesit Booktype:"
+msgstr "Booktypeサーバー管理者のEメールアドレス"
 
 #. Type: string
 #. Description
@@ -158,13 +158,13 @@ msgstr "Adresë email e përgjegjësit të shërbyesit Booktype:"
 msgid ""
 "Enter the email address of the system administrator for your Booktype users "
 "to contact."
-msgstr "Jepni adresën email të përgjegjësit të sistemit me të cilin do të duhej të lidheshin përdoruesit e Booktype-it tuaj."
+msgstr "このBooktype利用者がコンタクトをとるためのシステム管理者のメールアドレスを入力してください。"
 
 #. Type: password
 #. Description
 #: ../templates:9001
 msgid "Web password for the Booktype server administrator:"
-msgstr "Fjalëkalim Web për përgjegjësin e shërbyesit Booktype:"
+msgstr "Booktypeサーバー管理者のWebパスワード"
 
 #. Type: password
 #. Description
@@ -173,20 +173,20 @@ msgid ""
 "Enter a strong password for the adminstrator to use in the web interface of "
 "the default Booktype instance. This should not be the same as any other "
 "password."
-msgstr "Jepni për përgjegjësin një fjalëkalim të fuqishëm, për ta përdorur te ndërfaqja web e instancës parazgjedhje Booktype. Ky s’duhet të jetë i njëjtë me asnjë nga fjalëkalimet e tjerë."
+msgstr "デフォルトのBooktypeインスタンスを管理者としてWeb利用するための強力なパスワードを入力してください。このパスワードは他のパスワードとは異なるべきです。"
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:10001
 msgid "Booktype Site"
-msgstr "Sajt Booktype"
+msgstr "Booktypeサイト"
 
 #. Type: string
 #. Description
 #: ../templates:10002
 msgid "Name of the default Booktype instance:"
-msgstr "Emër për instancën parazgjedhje të Booktype-it:"
+msgstr "デフォルトのBooktypeインスタンスの名前"
 
 #. Type: string
 #. Description
@@ -194,13 +194,13 @@ msgstr "Emër për instancën parazgjedhje të Booktype-it:"
 msgid ""
 "Enter the name of the default Booktype instance, which will be shown in the "
 "user interface template for that instance."
-msgstr "Jepni emrin e instalimit tuaj parazgjedhje Booktype, i cili do të shfaqet te gjedhja e ndërfaqes së përdoruesve për atë instalim."
+msgstr "デフォルトのBooktypeインスタンスの名前を入力してください。このBooktypeインスタンスのユーザインタフェースのテンプレートに表示されます。"
 
 #. Type: string
 #. Description
 #: ../templates:11001
 msgid "Domain name of the default Booktype instance:"
-msgstr "Emër përkatësie për instancën parazgjedhje të Booktype-it:"
+msgstr "デフォルトのBooktypeインスタンスのドメイン名"
 
 #. Type: string
 #. Description
@@ -209,7 +209,7 @@ msgid ""
 "Enter the domain name of the default Booktype instance. The DNS record for "
 "this domain name must resolve to the Apache server running on this machine, "
 "for example:"
-msgstr "Jepni emrin e përkatësisë për instalimin parazgjedhje të Booktype-it. Regjistrimi DNS për këtë përkatësi duhet të pasqyrojë shërbyesin Apache që po xhiron në këtë makinë, për shembull:"
+msgstr "デフォルトのBooktypeインスタンスのドメイン名を入力してください。ここのドメイン名で指定したDNSレコードは、Apache Webサーバが動作するこのサーバと一致する必要があります。例："
 
 #. Type: string
 #. Description
@@ -221,7 +221,7 @@ msgstr "booktype.example.com"
 #. Description
 #: ../templates:12001
 msgid "Report email user:"
-msgstr "Email përdoruesi për raporte:"
+msgstr "レポート用送信元メールアドレス："
 
 #. Type: string
 #. Description
@@ -229,56 +229,56 @@ msgstr "Email përdoruesi për raporte:"
 msgid ""
 "Enter the 'From' address for Booktype to use when sending management "
 "reports."
-msgstr "Jepni adresën për 'Nga' për Booktype-it, e cila të përdoret kur dërgohen raporte administrimi."
+msgstr "Booktypeがレポートを送付するときに利用する送信元アドレスを入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Email host:"
-msgstr "Strehë email-i:"
+msgstr "メールホスト："
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Enter the mail server for Booktype to use when sending email."
-msgstr "Jepni shërbyesin e postës për Booktype-in, për t’u përdorur kur dërgohet email."
+msgstr "Booktypeがメールを送るためのメールサーバを入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:14001
 msgid "Email port:"
-msgstr "Portë email-i:"
+msgstr "Eメールport："
 
 #. Type: string
 #. Description
 #: ../templates:14001
 msgid "Enter the SMTP port for Booktype to use when sending email."
-msgstr "Jepni portën SMTP për Booktype-in, për t’u përdorur kur dërgohet email."
+msgstr "Booktypeがメールを送るときに利用するSMTPサーバのport番号を入力してください。"
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:15001
 msgid "Unknown"
-msgstr "E panjohur"
+msgstr "不明"
 
 #. Type: string
 #. Description
 #: ../templates:15002
 msgid "Default publisher:"
-msgstr "Botues parazgjedhje:"
+msgstr "デフォルト出版者"
 
 #. Type: string
 #. Description
 #: ../templates:15002
 msgid "Enter the name of the default publisher for new books."
-msgstr "Jepni emrin e botuesit parazgjedhje për libra të rinj."
+msgstr "新しい本を作るときのデフォルトの出版者を入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:16001
 msgid "Redis host:"
-msgstr "Strehë Redis:"
+msgstr "Redis ホスト:"
 
 #. Type: string
 #. Description
@@ -286,26 +286,26 @@ msgstr "Strehë Redis:"
 msgid ""
 "Enter the Redis server hostname. For a typical installation, you can use the"
 " default of 'localhost'."
-msgstr "Jepni emërstrehën e shërbyesit Redis. Për një instalim të zakonshëm mund të përdorni parazgjedhjen 'localhost'."
+msgstr "Redisサーバのホスト名を入力してください。通常、’localhost'と設定するのが一般的です。"
 
 #. Type: string
 #. Description
 #: ../templates:17001
 msgid "Redis port:"
-msgstr "Portë Redis:"
+msgstr "Redis port:"
 
 #. Type: string
 #. Description
 #: ../templates:17001
 msgid ""
 "Enter the port number that your Redis server uses. The default port is 6379."
-msgstr "Jepni numrin e portës që përdor shërbyesi juaj Redis. Porta parazgjedhje është 6379."
+msgstr "Redisサーバが利用するポート番号を入力してください。デフォルトは6379です。"
 
 #. Type: string
 #. Description
 #: ../templates:18001
 msgid "Redis database number:"
-msgstr "Numër baze të dhënash Redis:"
+msgstr "Redisデータベースの数："
 
 #. Type: string
 #. Description
@@ -313,13 +313,13 @@ msgstr "Numër baze të dhënash Redis:"
 msgid ""
 "Enter the number of the Redis database. If you only have one application "
 "using the Redis server, this value can be the default of zero."
-msgstr "Jepni numrin e bazës së të dhënave Redis. Nëse keni vetëm një zbatim që përdor shërbyesin Redis, kjo vlerë mund të lihet sa parazgjedhja zero."
+msgstr "Redisデータベースの数を入力してください。もし、Redisサーバを専用で利用しているのであれば、デフォルトでは0を設定します。"
 
 #. Type: password
 #. Description
 #: ../templates:19001
 msgid "Redis password:"
-msgstr "Fjalëkalim Redis:"
+msgstr "Redisパスワード："
 
 #. Type: password
 #. Description
@@ -327,28 +327,28 @@ msgstr "Fjalëkalim Redis:"
 msgid ""
 "Enter the Redis password, if your server requires one. The default is "
 "'None'."
-msgstr "Jepni fjalëkalimin për te Redis, nëse shërbyesi juaj lyp një të tillë. Parazgjedhja është 'None'."
+msgstr "Redisサーバのパスワードを入力してください。もしサーバが１つだけ要求するのであれば、デフォルトは'None'（なし）です。"
 
 #. Type: string
 #. Description
 #: ../templates:20001
 msgid "Default instance time zone:"
-msgstr "Zonë kohore parazgjedhje për instancën:"
+msgstr "デフォルトのタイムゾーン："
 
 #. Type: string
 #. Description
 #: ../templates:20001
 msgid "Enter the time zone for your default Booktype instance."
-msgstr "Jepni zonën kohore për instancën tuaj parazgjedhjeje të Booktype-it."
+msgstr "このBooktypeインスタンスのタイムゾーンを入力してください。"
 
 #. Type: string
 #. Description
 #: ../templates:21001
 msgid "Default instance interface language:"
-msgstr "Gjuhë ndërfaqeje parazgjedhje për instancën:"
+msgstr "デフォルトで利用する言語："
 
 #. Type: string
 #. Description
 #: ../templates:21001
 msgid "Enter the interface language code for your default Booktype instance."
-msgstr "Jepni kodin e gjuhës së ndërfaqes për instalimin tuaj parazgjedhje të Booktype-it."
+msgstr "このBooktypeで利用する言語のコードを入力してください。"
