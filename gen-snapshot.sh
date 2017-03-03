@@ -3,7 +3,7 @@
 # Set GITPATH to the directory containing the Booktype source
 # Set PKGPATH to the directory containing the packaging scripts
 
-VERSION=2.0.0~$(date "+%Y%m%d")
+VERSION=2.2.0~$(date "+%Y%m%d")
 REVISION=1
 GITPATH=~/64studio/git/booktype/
 PKGPATH=~/64studio/git/booktype-packaging/
@@ -18,13 +18,13 @@ mkdir ${BUILDDEST}
 echo "copying Booktype files to temporary directory..."
 
 cd ${GITPATH}
-git checkout 2.0
-git pull origin 2.0
+git checkout master
+git pull origin master
 cp -a * ${BUILDDEST} || exit
 
 cd ${BUILDDEST} || exit
 
-# Fixes for 2.0.0  #############
+# Fixes for 2.2.0  #############
 
 # moved to debian/copyright
 rm LICENSE.txt
@@ -44,7 +44,7 @@ cp -a ${PKGPATH}debian ${BUILDDEST} || exit
 
 # Set the version of the snapshot package
 
-sed -i "1s:(2.0.0-1):(${VERSION}-${REVISION}):g" debian/changelog
+sed -i "1s:(2.2.0-1):(${VERSION}-${REVISION}):g" debian/changelog
 
 #############################
 

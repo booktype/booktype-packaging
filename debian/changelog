@@ -1,3 +1,9 @@
+booktype (2.2.0-1) unstable; urgency=medium
+
+  * Upstream 2.2.0 release
+
+ -- Daniel James <daniel@64studio.com>  Fri, 03 Mar 2017 10:31:45 +0000
+
 booktype (2.0.0-1) unstable; urgency=low
 
   * Upstream 2.0.0 release
