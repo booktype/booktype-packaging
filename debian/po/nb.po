@@ -3,20 +3,19 @@
 # This file is distributed under the same license as the Booktype package.
 #
 # Translators:
-# Paul Graabein <pmepost@gmail.com>, 2015
+# Daniel James <daniel@64studio.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
 "POT-Creation-Date: 2015-11-16 17:56+0000\n"
-"PO-Revision-Date: 2015-01-06 17:51+0000\n"
-"Last-Translator: Paul Graabein <pmepost@gmail.com>\n"
-"Language-Team: Norwegian (http://www.transifex.com/sourcefabric/booktype/"
-"language/no/)\n"
-"Language: no\n"
+"PO-Revision-Date: 2016-05-23 16:47+0000\n"
+"Last-Translator: Daniel James <daniel@64studio.com>\n"
+"Language-Team: Norwegian Bokmål (http://www.transifex.com/sourcefabric/booktype/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: select
@@ -46,10 +45,7 @@ msgstr "Sett opp serveren automatisk:"
 msgid ""
 "This script can perform automatic configuration of a default instance, so "
 "that you can begin using Booktype directly after installation."
-msgstr ""
-"Dette scriptet kan utføre automatisk konfigurasjon av en standard "
-"installasjon, slik at du kan begynne å bruke Booktype direkte etter "
-"installasjonen."
+msgstr "Dette scriptet kan utføre automatisk konfigurasjon av en standard installasjon, slik at du kan begynne å bruke Booktype direkte etter installasjonen."
 
 #. Type: select
 #. Description
@@ -57,10 +53,7 @@ msgstr ""
 msgid ""
 "Choose 'yes please' and the script will ask for details in order to set up "
 "the Booktype instance and create a virtual host configuration for Apache."
-msgstr ""
-"Velg 'ja takk', og installasjonsskriptet vil spørre deg om detaljene for å "
-"sette opp Booktype serveren, og opprette en virtuell serverkonfigurasjon for "
-"Apache."
+msgstr "Velg 'ja takk', og installasjonsskriptet vil spørre deg om detaljene for å sette opp Booktype serveren, og opprette en virtuell serverkonfigurasjon for Apache."
 
 #. Type: select
 #. Description
@@ -68,9 +61,7 @@ msgstr ""
 msgid ""
 "If you choose 'no thanks', that's no problem. You're welcome to set it up "
 "however you like."
-msgstr ""
-"Hvis du velger 'nei takk', så er ikke det noe problem.  Du er velkommen til "
-"å sette opp serveren akkurat som det passer deg."
+msgstr "Hvis du velger 'nei takk', så er ikke det noe problem. Du er velkommen til å sette opp serveren akkurat som det passer deg."
 
 #. Type: string
 #. Description
@@ -100,7 +91,7 @@ msgstr "Skriv inn brukernavnet til Booktype databasens eier."
 #. Description
 #: ../templates:4001
 msgid "Password for the Booktype database:"
-msgstr "Passord for Booktype databasen."
+msgstr "Passord for Booktype databasen:"
 
 #. Type: password
 #. Description
@@ -118,8 +109,7 @@ msgstr "Vertsnavn for databasen:"
 #. Description
 #: ../templates:5001
 msgid "Enter the hostname of the machine serving the Booktype database."
-msgstr ""
-"Skriv inn vertsnavnet for maskinen hvor Booktype databasen befinner seg."
+msgstr "Skriv inn vertsnavnet for maskinen hvor Booktype databasen befinner seg."
 
 #. Type: string
 #. Description
@@ -133,9 +123,7 @@ msgstr "Booktype databasens portnummer:"
 msgid ""
 "Enter the port number that your database server uses. The default for "
 "PostgreSQL database servers is 5432."
-msgstr ""
-"Skriv inn portnummeret til databaseserveren. Standardporten for PostgreSQL "
-"database servere er 5432"
+msgstr "Skriv inn portnummeret til databaseserveren. Standardporten for PostgreSQL database servere er 5432."
 
 #. Type: string
 #. Default
@@ -156,15 +144,13 @@ msgstr "Navnet på Booktype serverens administrator:"
 msgid ""
 "Enter the name of the system administrator for your Booktype users to "
 "contact."
-msgstr ""
-"Skriv inn navnet på systemadministratoreren du ønsker dine Booktype brukere "
-"skal kontakte."
+msgstr "Skriv inn navnet på systemadministratoreren du ønsker dine Booktype brukere skal kontakte."
 
 #. Type: string
 #. Description
 #: ../templates:8001
 msgid "Email address of the Booktype server administrator:"
-msgstr "Serveradministrators epostadresse"
+msgstr "Serveradministrators epostadresse:"
 
 #. Type: string
 #. Description
@@ -172,17 +158,13 @@ msgstr "Serveradministrators epostadresse"
 msgid ""
 "Enter the email address of the system administrator for your Booktype users "
 "to contact."
-msgstr ""
-"Skriv inn epostadressen til systemadministratoren du ønsker dine Booktype "
-"brukere skal kontakte."
+msgstr "Skriv inn epostadressen til systemadministratoren du ønsker dine Booktype brukere skal kontakte."
 
 #. Type: password
 #. Description
 #: ../templates:9001
-#, fuzzy
-#| msgid "Name of the Booktype server administrator:"
 msgid "Web password for the Booktype server administrator:"
-msgstr "Navnet på Booktype serverens administrator:"
+msgstr "Passord for serverens administrator:"
 
 #. Type: password
 #. Description
@@ -191,7 +173,7 @@ msgid ""
 "Enter a strong password for the adminstrator to use in the web interface of "
 "the default Booktype instance. This should not be the same as any other "
 "password."
-msgstr ""
+msgstr "Tast inn et sterkt passord for administratorens tilgang til innlogging i denne spesifikke installasjonen av Booktype. Dette må være et unikt passord."
 
 #. Type: string
 #. Default
@@ -204,7 +186,7 @@ msgstr "Booktypeinstallasjonens navn"
 #. Description
 #: ../templates:10002
 msgid "Name of the default Booktype instance:"
-msgstr "Booktype installasjonens nettsidenavn"
+msgstr "Booktype installasjonens nettsidenavn:"
 
 #. Type: string
 #. Description
@@ -212,15 +194,13 @@ msgstr "Booktype installasjonens nettsidenavn"
 msgid ""
 "Enter the name of the default Booktype instance, which will be shown in the "
 "user interface template for that instance."
-msgstr ""
-"Skriv inn Booktype installasjonens nettsidenavn, som vil fremkomme i malen "
-"for denne installasjonens brukergrensesnitt."
+msgstr "Skriv inn Booktype installasjonens nettsidenavn, som vil fremkomme i malen for denne installasjonens brukergrensesnitt."
 
 #. Type: string
 #. Description
 #: ../templates:11001
 msgid "Domain name of the default Booktype instance:"
-msgstr "Domenenavnet til denne Booktype installasjonen"
+msgstr "Domenenavnet til denne Booktype installasjonen:"
 
 #. Type: string
 #. Description
@@ -229,10 +209,7 @@ msgid ""
 "Enter the domain name of the default Booktype instance. The DNS record for "
 "this domain name must resolve to the Apache server running on this machine, "
 "for example:"
-msgstr ""
-"Skriv inn domenenavnet for standardinstallasjonen.  DNS konfigurasjonen for "
-"dette domenet må peke til Apache serveren som kjører på denne maskinen, f."
-"eks:"
+msgstr "Skriv inn domenenavnet for standardinstallasjonen. DNS konfigurasjonen for dette domenet må peke til Apache serveren som kjører på denne maskinen, f.eks:"
 
 #. Type: string
 #. Description
@@ -244,29 +221,27 @@ msgstr "booktype.eksempeldomene.no"
 #. Description
 #: ../templates:12001
 msgid "Report email user:"
-msgstr "Rapport épostbruker:"
+msgstr "Rapporter épostbruker:"
 
 #. Type: string
 #. Description
 #: ../templates:12001
 msgid ""
-"Enter the 'From' address for Booktype to use when sending management reports."
-msgstr ""
-"Skriv inn 'Fra' adressen Booktype skal bruke når den sender ut "
-"administrasjonsrapporter."
+"Enter the 'From' address for Booktype to use when sending management "
+"reports."
+msgstr "Skriv inn 'Fra' adressen Booktype skal bruke når den sender ut administrasjonsrapporter."
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Email host:"
-msgstr "Vertsnavn på epostserver"
+msgstr "Vertsnavn på epostserver:"
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Enter the mail server for Booktype to use when sending email."
-msgstr ""
-"Skriv inn hvilken epostvert Booktype skal bruke når den sender ut epost."
+msgstr "Skriv inn hvilken epostvert Booktype skal bruke når den sender ut epost."
 
 #. Type: string
 #. Description
@@ -309,9 +284,9 @@ msgstr "Redis vert:"
 #. Description
 #: ../templates:16001
 msgid ""
-"Enter the Redis server hostname. For a typical installation, you can use the "
-"default of 'localhost'."
-msgstr "Skriv inn Redis serverens vertsnavn.  Det vanligste er 'localhost'"
+"Enter the Redis server hostname. For a typical installation, you can use the"
+" default of 'localhost'."
+msgstr "Skriv inn Redis serverens vertsnavn. Det vanligste er 'localhost'"
 
 #. Type: string
 #. Description
@@ -324,7 +299,7 @@ msgstr "Redis portnummer:"
 #: ../templates:17001
 msgid ""
 "Enter the port number that your Redis server uses. The default port is 6379."
-msgstr "Skriv inn portnummeret Redis serveren bruker.  Standardporten er 6379"
+msgstr "Skriv inn portnummeret Redis serveren bruker. Standardporten er 6379"
 
 #. Type: string
 #. Description
@@ -338,10 +313,7 @@ msgstr "Redis databasenummer:"
 msgid ""
 "Enter the number of the Redis database. If you only have one application "
 "using the Redis server, this value can be the default of zero."
-msgstr ""
-"Skriv inn nummeret på Redis databasen du skal bruke.  Hvis du bare har én "
-"installasjon som bruker Redis serveren, så kan denne verdien beholde "
-"standardverdien null/0."
+msgstr "Skriv inn nummeret på Redis databasen du skal bruke. Hvis du bare har én installasjon som bruker Redis serveren, så kan denne verdien beholde standardverdien null/0."
 
 #. Type: password
 #. Description
@@ -353,10 +325,9 @@ msgstr "Redis passord:"
 #. Description
 #: ../templates:19001
 msgid ""
-"Enter the Redis password, if your server requires one. The default is 'None'."
-msgstr ""
-"Skriv inn passordet til Redis databasen hvis din server krever det.  "
-"Standardverdien er 'None', altså tomt passord."
+"Enter the Redis password, if your server requires one. The default is "
+"'None'."
+msgstr "Skriv inn passordet til Redis databasen hvis din server krever det. Standardverdien er 'None', altså tomt passord."
 
 #. Type: string
 #. Description
@@ -380,5 +351,4 @@ msgstr "Standard Booktype språk."
 #. Description
 #: ../templates:21001
 msgid "Enter the interface language code for your default Booktype instance."
-msgstr ""
-"Veld det språk du ønsker å bruke som standard i din Booktype installasjon."
+msgstr "Veld det språk du ønsker å bruke som standard i din Booktype installasjon."

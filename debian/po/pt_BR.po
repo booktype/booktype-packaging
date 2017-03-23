@@ -3,21 +3,20 @@
 # This file is distributed under the same license as the Booktype package.
 #
 # Translators:
-# Ivan Satsiuk <ivan.satsiuk@sourcefabric.org>, 2016
-# Oleg Pshenichniy <olegpshenichniy@gmail.com>, 2015
+# aalmeida <alinecs.82@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
 "POT-Creation-Date: 2015-11-16 17:56+0000\n"
-"PO-Revision-Date: 2016-01-12 12:07+0000\n"
-"Last-Translator: Ivan Satsiuk <ivan.satsiuk@sourcefabric.org>\n"
-"Language-Team: Russian (http://www.transifex.com/sourcefabric/booktype/language/ru/)\n"
+"PO-Revision-Date: 2016-11-21 19:01+0000\n"
+"Last-Translator: aalmeida <alinecs.82@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/sourcefabric/booktype/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Type: select
 #. Choices
@@ -26,19 +25,19 @@ msgstr ""
 #. Translators: please translate this default value
 #: ../templates:1001 ../templates:1002
 msgid "yes please"
-msgstr "да, пожалуйста"
+msgstr "sim, por favor"
 
 #. Type: select
 #. Choices
 #: ../templates:1001
 msgid "no thanks"
-msgstr "нет, спасибо"
+msgstr "não, obrigado"
 
 #. Type: select
 #. Description
 #: ../templates:1003
 msgid "Set up server automatically:"
-msgstr "Настроить сервер автоматически:"
+msgstr "Configurar servidor automaticamente:"
 
 #. Type: select
 #. Description
@@ -46,7 +45,7 @@ msgstr "Настроить сервер автоматически:"
 msgid ""
 "This script can perform automatic configuration of a default instance, so "
 "that you can begin using Booktype directly after installation."
-msgstr "Этот скрипт может выполнить автоматическую настройку по умолчанию, так что вы сможете начать использовать Booktype сразу после установки."
+msgstr "Este script pode realizar a configuração automática de uma instância padrão, de modo que você pode começar a usar Booktype diretamente após a instalação."
 
 #. Type: select
 #. Description
@@ -54,7 +53,7 @@ msgstr "Этот скрипт может выполнить автоматиче
 msgid ""
 "Choose 'yes please' and the script will ask for details in order to set up "
 "the Booktype instance and create a virtual host configuration for Apache."
-msgstr "Выберите \"да, пожалуйста\" и скрипт запросит информацию, чтобы настроить Booktype и создаст конфигурацию виртуального хоста для Apache."
+msgstr "Escolha 'sim, por favor' e o script pedirá detalhes para configurar a instância do Booktype e criar uma configuração de host virtual para o Apache."
 
 #. Type: select
 #. Description
@@ -62,61 +61,61 @@ msgstr "Выберите \"да, пожалуйста\" и скрипт запр
 msgid ""
 "If you choose 'no thanks', that's no problem. You're welcome to set it up "
 "however you like."
-msgstr "Если вы выберите \"нет, спасибо\", это не проблема. Вы всегда можете настроить, как вам нравится."
+msgstr "Se você escolher 'não, obrigado', não há problema. Você é bem-vindo para configurá-lo da maneira que quiser"
 
 #. Type: string
 #. Description
 #: ../templates:2001
 msgid "Name of the Booktype database:"
-msgstr "Имя базы данных Booktype:"
+msgstr "Nome do banco de dados Booktype:"
 
 #. Type: string
 #. Description
 #: ../templates:2001
 msgid "Enter the name of the database for Booktype to use."
-msgstr "Введите имя базы данных для Booktype."
+msgstr "Digite o nome do banco de dados para uso do Booktype."
 
 #. Type: string
 #. Description
 #: ../templates:3001
 msgid "Booktype database owner username:"
-msgstr "Имя пользователя базы данных для Booktype :"
+msgstr "Nome do proprietário do banco de dados do Booktype:"
 
 #. Type: string
 #. Description
 #: ../templates:3001
 msgid "Enter the username of the Booktype database owner."
-msgstr "Введите имя пользователя базы данных для Booktype :"
+msgstr "Digite o nome do proprietário do banco de dados do Booktype."
 
 #. Type: password
 #. Description
 #: ../templates:4001
 msgid "Password for the Booktype database:"
-msgstr "Пароль базы данных для Booktype :"
+msgstr "Senha para o banco de dados do Booktype:"
 
 #. Type: password
 #. Description
 #: ../templates:4001
 msgid "Enter the password for the database which Booktype will use."
-msgstr "Введите пароль базы данных для Booktype :"
+msgstr "Digite a senha para o banco de dados que o Booktype usará."
 
 #. Type: string
 #. Description
 #: ../templates:5001
 msgid "Booktype database host:"
-msgstr "Хост базы данных Booktype:"
+msgstr "Host do banco de dados do Booktype"
 
 #. Type: string
 #. Description
 #: ../templates:5001
 msgid "Enter the hostname of the machine serving the Booktype database."
-msgstr "Введите имя хоста сервера базы данных Booktype."
+msgstr "Digite o hostname da máquina onde o banco de dados do Booktype funciona."
 
 #. Type: string
 #. Description
 #: ../templates:6001
 msgid "Booktype database port:"
-msgstr "Порт базы данных Booktype:"
+msgstr "Porta do banco de dados do Booktype:"
 
 #. Type: string
 #. Description
@@ -124,20 +123,20 @@ msgstr "Порт базы данных Booktype:"
 msgid ""
 "Enter the port number that your database server uses. The default for "
 "PostgreSQL database servers is 5432."
-msgstr "Введите номер порта который использует ваш сервер базы данных. Для базы данных PostgreSQL по умолчанию 5432."
+msgstr "Digite o número da porta utilizada pelo seu servidor de banco de dados. O padrão para servidores de banco de dados PostgreSQL é 5432."
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:7001
 msgid "Booktype Administrator"
-msgstr "Администратор Booktype"
+msgstr "Administrador do Booktype"
 
 #. Type: string
 #. Description
 #: ../templates:7002
 msgid "Name of the Booktype server administrator:"
-msgstr "Имя администратора сервера Booktype:"
+msgstr "Nome do administrador do servidor do Booktype:"
 
 #. Type: string
 #. Description
@@ -145,13 +144,13 @@ msgstr "Имя администратора сервера Booktype:"
 msgid ""
 "Enter the name of the system administrator for your Booktype users to "
 "contact."
-msgstr "Введите имя системного администратора для контакта Booktype пользователей. "
+msgstr "Digite o nome do administrador do sistema para que seus usuários do BookType possam entrar em contato."
 
 #. Type: string
 #. Description
 #: ../templates:8001
 msgid "Email address of the Booktype server administrator:"
-msgstr "Email адрес администратора сервера Booktype:"
+msgstr "Endereço de e-mail do administrador do servidor do Booktype:"
 
 #. Type: string
 #. Description
@@ -159,13 +158,13 @@ msgstr "Email адрес администратора сервера Booktype:"
 msgid ""
 "Enter the email address of the system administrator for your Booktype users "
 "to contact."
-msgstr "Введите email системного администратора для контакта Booktype пользователей."
+msgstr "Digite o endereço de e-mail do administrador do sistema para que seus usuários BookType possam entrar em contato."
 
 #. Type: password
 #. Description
 #: ../templates:9001
 msgid "Web password for the Booktype server administrator:"
-msgstr "Веб-пароль администратора сервера Booktype:"
+msgstr "Senha do site para o administrador do servidor Booktype:"
 
 #. Type: password
 #. Description
@@ -174,20 +173,20 @@ msgid ""
 "Enter a strong password for the adminstrator to use in the web interface of "
 "the default Booktype instance. This should not be the same as any other "
 "password."
-msgstr "Введите устойчивый пароль, используемый администратором при работе с веб-интерфейсом экземпляра Booktype, установленым по-умолчанию. Желательно, чтобы введеный пароль не повторялся где-либо еще"
+msgstr "Digite uma senha incorreta para que o administrador use na interface web da instância padrão. Não pode ser a mesma senha."
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:10001
 msgid "Booktype Site"
-msgstr "Booktype Сайт"
+msgstr "Site do Booktype"
 
 #. Type: string
 #. Description
 #: ../templates:10002
 msgid "Name of the default Booktype instance:"
-msgstr "Имя экземпляра Booktype по умолчанию:"
+msgstr "Nome da instância padrão do Booktype:"
 
 #. Type: string
 #. Description
@@ -195,13 +194,13 @@ msgstr "Имя экземпляра Booktype по умолчанию:"
 msgid ""
 "Enter the name of the default Booktype instance, which will be shown in the "
 "user interface template for that instance."
-msgstr " Введите имя экземпляра Booktype по умолчанию, которое будет отображаться на интерфейсе пользователя для этой установки. "
+msgstr "Digite o nome da instância padrão do Booktype que será mostrada no modelo de interface de usuário."
 
 #. Type: string
 #. Description
 #: ../templates:11001
 msgid "Domain name of the default Booktype instance:"
-msgstr "Доменное имя для экземпляра Booktype по умолчанию:"
+msgstr "Nome de domínio da instância padrão do Booktype:"
 
 #. Type: string
 #. Description
@@ -210,7 +209,7 @@ msgid ""
 "Enter the domain name of the default Booktype instance. The DNS record for "
 "this domain name must resolve to the Apache server running on this machine, "
 "for example:"
-msgstr "Введите доменное имя для экземпляра Booktype по умолчанию. Запись DNS для этого доменного имени должна указывать на сервер Apache работающий на этой машине, к примеру:"
+msgstr "Digite o nome de domínio da instância padrão do Booktype. O registro de DNS para este nome de domínio deve resolver para o servidor Apache rodando nesta máquina, por exemplo:"
 
 #. Type: string
 #. Description
@@ -222,7 +221,7 @@ msgstr "booktype.example.com"
 #. Description
 #: ../templates:12001
 msgid "Report email user:"
-msgstr "Email пользователя для отчетов:"
+msgstr "Informar ao usuário de e-mail:"
 
 #. Type: string
 #. Description
@@ -230,56 +229,56 @@ msgstr "Email пользователя для отчетов:"
 msgid ""
 "Enter the 'From' address for Booktype to use when sending management "
 "reports."
-msgstr "Введите \"От\" адрес для Booktype, используется при отправке отчетов."
+msgstr "Digite o endereço 'De' para o Booktype ao enviar relatórios de gestão."
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Email host:"
-msgstr "Email хост:"
+msgstr "Host do e-mail:"
 
 #. Type: string
 #. Description
 #: ../templates:13001
 msgid "Enter the mail server for Booktype to use when sending email."
-msgstr "Введите почтовый сервер для Booktype. Используется при отправки email."
+msgstr "Digite o servidor de e-mail para uso do Booktype ao enviar e-mail."
 
 #. Type: string
 #. Description
 #: ../templates:14001
 msgid "Email port:"
-msgstr "Email порт:"
+msgstr "Porta de e-mail:"
 
 #. Type: string
 #. Description
 #: ../templates:14001
 msgid "Enter the SMTP port for Booktype to use when sending email."
-msgstr "Введите SMTP порт для Booktype, используется при отправки email."
+msgstr "Digite a porta SMTP do Booktype a ser usada ao enviar e-mail."
 
 #. Type: string
 #. Default
 #. Translators: please translate this default value
 #: ../templates:15001
 msgid "Unknown"
-msgstr "Неизвестный"
+msgstr "Desconhecido"
 
 #. Type: string
 #. Description
 #: ../templates:15002
 msgid "Default publisher:"
-msgstr "Издатель по умолчанию:"
+msgstr "Editor padrão:"
 
 #. Type: string
 #. Description
 #: ../templates:15002
 msgid "Enter the name of the default publisher for new books."
-msgstr "   Введите имя издателя по умолчанию для новых книг."
+msgstr "Digite o nome do editor padrão para novos livros."
 
 #. Type: string
 #. Description
 #: ../templates:16001
 msgid "Redis host:"
-msgstr "Redis хост:"
+msgstr "Host do Redis"
 
 #. Type: string
 #. Description
@@ -287,26 +286,26 @@ msgstr "Redis хост:"
 msgid ""
 "Enter the Redis server hostname. For a typical installation, you can use the"
 " default of 'localhost'."
-msgstr "Введите имя хоста Redis сервера. Для обычной установки, вы можете использовать значение по умолчанию \"localhost\"."
+msgstr "Digite o hostname do servidor Redis. Para uma instalação padrão, você pode usar o padrçao de 'localhost'."
 
 #. Type: string
 #. Description
 #: ../templates:17001
 msgid "Redis port:"
-msgstr "Redis порт:"
+msgstr "Porta Redis:"
 
 #. Type: string
 #. Description
 #: ../templates:17001
 msgid ""
 "Enter the port number that your Redis server uses. The default port is 6379."
-msgstr "Введите номер порта который используется вашим Redis сервером. Порт по умолчанию 6379."
+msgstr "Digite o número da porta que o seu servidor Redis usa. A porta padrão é 6379."
 
 #. Type: string
 #. Description
 #: ../templates:18001
 msgid "Redis database number:"
-msgstr "Номер базы данных Redis:"
+msgstr "Redefinir número da base de dados"
 
 #. Type: string
 #. Description
@@ -314,13 +313,13 @@ msgstr "Номер базы данных Redis:"
 msgid ""
 "Enter the number of the Redis database. If you only have one application "
 "using the Redis server, this value can be the default of zero."
-msgstr "Введите номер базы данных Redis. Если у вас только одно приложение использует Redis, это значение может быть по умолчанию 0."
+msgstr "Digite o número do banco de dados Redis. Se você só tem uma aplicação utilizando o servidor Redis, esse valor pode ser o padrão zero."
 
 #. Type: password
 #. Description
 #: ../templates:19001
 msgid "Redis password:"
-msgstr "Redis пароль:"
+msgstr "Senha Redis:"
 
 #. Type: password
 #. Description
@@ -328,28 +327,28 @@ msgstr "Redis пароль:"
 msgid ""
 "Enter the Redis password, if your server requires one. The default is "
 "'None'."
-msgstr "Введите пароль для Redis, если ваш сервер его требует. По умолчанию 'None'."
+msgstr "Digite a senha Redis se o servidor pedir. O padrão é 'Nenhum'."
 
 #. Type: string
 #. Description
 #: ../templates:20001
 msgid "Default instance time zone:"
-msgstr "Часовой пояс по умолчанию:"
+msgstr "Fuso horário padrão da instância:"
 
 #. Type: string
 #. Description
 #: ../templates:20001
 msgid "Enter the time zone for your default Booktype instance."
-msgstr " Введите часовой пояс по умолчанию для вашего экземпляра Booktype:"
+msgstr "Digite o fuso horário de sua instância padrão do Booktype."
 
 #. Type: string
 #. Description
 #: ../templates:21001
 msgid "Default instance interface language:"
-msgstr "Язык интерфейса по умолчанию:"
+msgstr "Idioma de interface para a instância padrão:"
 
 #. Type: string
 #. Description
 #: ../templates:21001
 msgid "Enter the interface language code for your default Booktype instance."
-msgstr "Введите код языка интерфейса по умолчанию для вашего экземпляра Booktype."
+msgstr "Digite o código do idioma da interface para sua instância padrão do Booktype."

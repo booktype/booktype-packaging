@@ -1,16 +1,16 @@
 # Booktype installation questions for Debconf.
-# Copyright (C) 2015 Booktype contributors
+# Copyright (C) 2014 Booktype contributors
 # This file is distributed under the same license as the Booktype package.
-# 
+#
 # Translators:
-# Hiroyuki.Anraku <anrakuh@gmail.com>, 2015
+# Hiroyuki Anraku <anrakuh@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
 "POT-Creation-Date: 2015-11-16 17:56+0000\n"
-"PO-Revision-Date: 2015-12-09 17:15+0000\n"
-"Last-Translator: Hiroyuki.Anraku <anrakuh@gmail.com>\n"
+"PO-Revision-Date: 2016-01-20 13:47+0000\n"
+"Last-Translator: Raoul Breugelmans <rpb@tokyo-med.ac.jp>\n"
 "Language-Team: Japanese (http://www.transifex.com/sourcefabric/booktype/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

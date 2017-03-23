@@ -1,7 +1,7 @@
 # Booktype installation questions for Debconf.
-# Copyright (C) 2015 Booktype contributors
+# Copyright (C) 2014 Booktype contributors
 # This file is distributed under the same license as the Booktype package.
-# 
+#
 # Translators:
 # Besnik <besnik@programeshqip.org>, 2015
 msgid ""

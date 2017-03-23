@@ -1,16 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# 
+# Booktype installation questions for Debconf.
+# Copyright (C) 2014 Booktype contributors
+# This file is distributed under the same license as the Booktype package.
+#
 # Translators:
-# boolsee <spcblack@gmail.com>, 2016
+# Seongho Jang <spcblack@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
 "POT-Creation-Date: 2015-11-16 17:56+0000\n"
 "PO-Revision-Date: 2016-02-18 00:58+0000\n"
-"Last-Translator: boolsee <spcblack@gmail.com>\n"
+"Last-Translator: Seongho Jang <spcblack@gmail.com>\n"
 "Language-Team: Korean (Korea) (http://www.transifex.com/sourcefabric/booktype/language/ko_KR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
