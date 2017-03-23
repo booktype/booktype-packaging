@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Daniel James <daniel@64studio.com>
 Build-Depends: debhelper (>= 8), dh-python, python-all, python-mock, python-setuptools, python-sphinx (>= 1.0.7+dfsg)
 X-Python-Version: >= 2.7
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.sourcefabric.org/en/booktype/
 Vcs-Git: git://github.com/sourcefabric/Booktype.git
 Vcs-Browser: https://github.com/sourcefabric/Booktype
@@ -14,7 +14,9 @@ Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~), virtualenv, python-virtualenv
 Depends: apache2-mpm-prefork,
  build-essential,
+ git,
  libapache2-mod-wsgi,
+ libffi-dev,
  libjpeg-dev,
  libpq-dev,
  libxml2-dev,

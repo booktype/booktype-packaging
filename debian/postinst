@@ -23,7 +23,9 @@ case "$1" in
     if [ ! -d ${VIRTUAL_ENV_DIR}/lib/python2.7/site-packages/django ]; then
 
       echo -e "\n*** Installing Python libraries ***"
-        ${VIRTUAL_ENV_DIR}/bin/pip install ${VIRTUAL_ENV_DIR}/booktype-dependencies.pybundle || exit 1
+        ${VIRTUAL_ENV_DIR}/bin/pip install --upgrade pip
+        ${VIRTUAL_ENV_DIR}/bin/pip install pyparsing appdirs
+        ${VIRTUAL_ENV_DIR}/bin/pip install -r ${VIRTUAL_ENV_DIR}/requirements/prod.txt || exit 1
 
     else
       echo -e "\n*** Not installing Python libraries ***"
@@ -200,7 +202,6 @@ case "$1" in
 
           echo "*** Finishing default instance creation ***"
           cd ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}
-          ./manage.py syncdb --noinput
           ./manage.py migrate
           ./manage.py collectstatic --noinput
           ./manage.py compress
