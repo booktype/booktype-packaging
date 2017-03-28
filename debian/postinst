@@ -152,13 +152,16 @@ case "$1" in
           echo "*** Setting default time zone to ${TIME_ZONE} ***"
           sed -i "s:TIME_ZONE = 'Europe/Berlin':TIME_ZONE = '${TIME_ZONE}':" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
-          db_get booktype/language-code     
+          db_get booktype/language-code
           LANGUAGE_CODE=$RET
           echo "*** Setting default language code to ${LANGUAGE_CODE} ***"
           sed -i "s/LANGUAGE_CODE = 'en-us'/LANGUAGE_CODE = '${LANGUAGE_CODE}'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           # stop debconf so daemons started by the install script cannot hold open the pipe
           db_stop
+
+          echo "*** Setting path to distro's pandoc ***"
+          sed -i "s/PANDOC_PATH = '/usr/local/bin/pandoc'/PANDOC_PATH = '/usr/bin/pandoc'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Setting virtual path to ${VIRTUAL_ENV_DIR} ***"
           sed -i "s:VIRTUAL_PATH='':VIRTUAL_PATH='${VIRTUAL_ENV_DIR}':" ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/wsgi.py
