@@ -12,7 +12,7 @@ Vcs-Browser: https://github.com/sourcefabric/Booktype
 Package: booktype
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~), virtualenv, python-virtualenv
-Depends: apache2-mpm-prefork,
+Depends: apache2,
  build-essential,
  git,
  libapache2-mod-wsgi,
