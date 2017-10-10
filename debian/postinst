@@ -161,13 +161,13 @@ case "$1" in
           db_stop
 
           echo "*** Setting path to distro's pandoc ***"
-          sed -i "s/PANDOC_PATH = '/usr/local/bin/pandoc'/PANDOC_PATH = '/usr/bin/pandoc'/" ${DEFAULT_INSTANCE_SETTINGS}/base.py
+          sed -i "s:PANDOC_PATH = '/usr/local/bin/pandoc':PANDOC_PATH = '/usr/bin/pandoc':" ${DEFAULT_INSTANCE_SETTINGS}/base.py
 
           echo "*** Setting virtual path to ${VIRTUAL_ENV_DIR} ***"
           sed -i "s:VIRTUAL_PATH='':VIRTUAL_PATH='${VIRTUAL_ENV_DIR}':" ${DEFAULT_INSTANCE_DIR}/${DEFAULT_INSTANCE_NAME}/${DEFAULT_INSTANCE_NAME}_site/wsgi.py
 
           # create an Apache configuration if it does not already exist
-          if [ ! -f /etc/apache2/sites-available/booktype-${DEFAULT_INSTANCE_NAME}.conf ] ; then 
+          if [ ! -f /etc/apache2/sites-available/booktype-${DEFAULT_INSTANCE_NAME}.conf ] ; then
 
             echo "*** Beginning Apache configuration ***"
 
