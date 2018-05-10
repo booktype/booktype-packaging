@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the Booktype package.
 #
 # Translators:
-# anvo <fragos.george@hotmail.com>, 2015
+# anvo <fragos.george@hotmail.com>, 2015,2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Booktype\n"
 "Report-Msgid-Bugs-To: booktype@packages.debian.org\n"
 "POT-Creation-Date: 2015-11-16 17:56+0000\n"
-"PO-Revision-Date: 2015-11-19 10:00+0000\n"
+"PO-Revision-Date: 2018-05-10 14:49+0000\n"
 "Last-Translator: Daniel James <daniel@64studio.com>\n"
 "Language-Team: Greek (http://www.transifex.com/sourcefabric/booktype/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -164,7 +164,7 @@ msgstr "Εισάγετε την ηλ. διεύθυνση για τον διαχ�
 #. Description
 #: ../templates:9001
 msgid "Web password for the Booktype server administrator:"
-msgstr ""
+msgstr "Ο κωδικός διαχειριστή για τον διακομιστή που φιλοξενεί το Booktype:"
 
 #. Type: password
 #. Description
@@ -173,7 +173,7 @@ msgid ""
 "Enter a strong password for the adminstrator to use in the web interface of "
 "the default Booktype instance. This should not be the same as any other "
 "password."
-msgstr ""
+msgstr "Εισάγετε έναν ισχυρό κωδικό για τον διαχειριστή τον οποίο θα χρησιμοποιείτε όταν συνδέεστε στην αρχική εγκατάσταση του Booktype. Αυτός ο κωδικός δεν πρέπει να είναι όμοιος με κανέναν άλλον!"
 
 #. Type: string
 #. Default
